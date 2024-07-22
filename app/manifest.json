@@ -1,21 +1,11 @@
 {
   "name": "egxworld",
   "short_name": "egxworld",
-  "description": "The website/portfolio for Ethan G.",
+  "description": "Full Stack Developer. Digital Product Designer.",
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#fff",
   "icons": [
-    {
-      "src": "/favicon.ico",
-      "sizes": "any",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "/icon.ico",
-      "sizes": "any",
-      "type": "image/x-icon"
-    },
     {
       "src": "/icon-192x192.png",
       "sizes": "192x192",

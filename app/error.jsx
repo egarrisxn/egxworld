@@ -1,20 +1,15 @@
-"use client";
+'use client'
 
-const Error = ({ error, reset }) => {
-
+const Error = ({error, reset}) => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <p className="text-2xl font-semibold pt-2">Something went wrong!</p>
-      <br />
-      <button
-        onClick={reset}
-        className="px-8 bg-blue-500 border-2 rounded-lg shadow-lg"
-      >
+    <div className='flex min-h-screen flex-col items-center justify-center'>
+      <p className='text-2xl font-semibold'>Something went wrong!</p>
+      <button onClick={reset} className='rounded-lg border-2 bg-blue-500 px-8 shadow-lg'>
         Refresh
       </button>
       <pre>{error.message}</pre>
     </div>
-  );
-};
+  )
+}
 
-export default Error;
+export default Error

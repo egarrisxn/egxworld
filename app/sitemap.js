@@ -1,28 +1,28 @@
 export default function sitemap() {
   return [
     {
-      url: "https://egxworld.net/",
+      url: 'https://egxworld.net/',
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: "https://egxworld.net/projects",
+      url: 'https://egxworld.net/projects',
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: "https://egxworld.net/about",
+      url: 'https://egxworld.net/about',
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: "https://egxworld.net/contact",
+      url: 'https://egxworld.net/contact',
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: 'monthly',
       priority: 0.8,
     },
-  ];
+  ]
 }

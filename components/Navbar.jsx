@@ -1,7 +1,8 @@
 'use client'
 import Link from 'next/link'
-import {MoonIcon, SunIcon} from '@radix-ui/react-icons'
+import {usePathname} from 'next/navigation'
 import {useTheme} from 'next-themes'
+import {MoonIcon, SunIcon} from '@radix-ui/react-icons'
 import {Button} from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -10,35 +11,25 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 
-const navItems = [
-  {name: 'about', href: '/about', external: false, hoverClass: 'hover:text-green-400'},
-  {name: 'projects', href: '/projects', external: false, hoverClass: 'hover:text-blue-400'},
-  {name: 'contact', href: '/contact', external: false, hoverClass: 'hover:text-red-400'},
-  {
-    name: 'blog',
-    href: 'https://www.egxblog.net/',
-    external: true,
-    hoverClass: 'hover:text-yellow-400',
-  },
-]
-
-export default function Header() {
+export default function Navbar() {
+  const pathname = usePathname()
   const {setTheme} = useTheme()
 
   return (
-    <header className='border-b border-foreground shadow shadow-foreground'>
+    <div className='border-b border-foreground shadow shadow-foreground'>
       <nav
         role='navigation'
         aria-label='Main Navigation'
         className='flex items-center justify-between'
       >
-        <section className='bg-black dark:bg-white'>
-          <div className='p-1 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-7'>
-            <Button variant='link' size='icon'>
-              <Link
-                href='/'
-                className='block text-sm text-background sm:text-base lg:text-lg xl:text-xl 2xl:text-3xl'
-              >
+        <section className='bg-foreground'>
+          <div className='p-1 text-background sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-7'>
+            <Button
+              variant='link'
+              size='icon'
+              className='text-sm text-background sm:text-base lg:text-lg xl:text-xl 2xl:text-3xl'
+            >
+              <Link className={`link0 ${pathname === '/' ? 'active' : ''}`} href='/' scroll={false}>
                 eg
               </Link>
             </Button>
@@ -47,31 +38,47 @@ export default function Header() {
         <section className='flex-grow'>
           <div className='p-1 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-7'>
             <ul className='ml-1 flex h-9 items-center gap-2 text-xs font-medium sm:ml-2 sm:gap-4 sm:text-sm md:ml-3 md:gap-6 md:text-base lg:ml-4 lg:gap-12 lg:text-lg xl:ml-5 xl:gap-16 xl:text-xl 2xl:ml-6 2xl:gap-24 2xl:text-3xl'>
-              {navItems.map((item) => (
-                <li key={item.name}>
-                  {item.external ? (
-                    <a
-                      href={item.href}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className={`hover:underline hover:underline-offset-4 ${item.hoverClass}`}
-                    >
-                      {item.name}
-                    </a>
-                  ) : (
-                    <Link
-                      href={item.href}
-                      className={`hover:underline hover:underline-offset-4 ${item.hoverClass}`}
-                    >
-                      {item.name}
-                    </Link>
-                  )}
-                </li>
-              ))}
+              <li>
+                <Link
+                  className={`link1 ${pathname === '/about' ? 'active' : ''}`}
+                  href='/about'
+                  scroll={false}
+                >
+                  about
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className={`link2 ${pathname === '/projects' ? 'active' : ''}`}
+                  href='/projects'
+                  scroll={false}
+                >
+                  projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className={`link3 ${pathname === '/contact' ? 'active' : ''}`}
+                  href='/contact'
+                  scroll={false}
+                >
+                  contact
+                </Link>
+              </li>
+              <li>
+                <a
+                  className='hover:text-yellow-400'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://www.egxblog.net/'
+                >
+                  blog
+                </a>
+              </li>
             </ul>
           </div>
         </section>
-        <section className='x'>
+        <section>
           <div className='p-1 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-7'>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -90,6 +97,6 @@ export default function Header() {
           </div>
         </section>
       </nav>
-    </header>
+    </div>
   )
 }

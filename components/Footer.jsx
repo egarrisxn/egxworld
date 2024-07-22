@@ -1,4 +1,4 @@
-import SocialIcons from '@/lib/socialIcons.js'
+import {SocialIcons} from '@/components/Icons.jsx'
 
 export default function Footer() {
   return (

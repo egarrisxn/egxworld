@@ -1,4 +1,6 @@
-export const CurrentProjects = [
+import ProjectCard from '@/components/ProjectCard'
+
+const currentProjects = [
   {
     image: '/projects/swaybae.png',
     alt: 'Sway Bae Official',
@@ -172,7 +174,7 @@ export const CurrentProjects = [
   },
 ]
 
-export const DepricatedProjects = [
+const depricatedProjects = [
   {
     image: '/projects/streamverse.png',
     alt: 'StreamVerse',
@@ -192,3 +194,22 @@ export const DepricatedProjects = [
     websiteLink: 'https://event-ease.herokuapp.com',
   },
 ]
+
+export default function ProjectsList() {
+  return (
+    <section className='mx-auto mt-12 flex max-w-5xl flex-col gap-12 px-4 sm:mt-16 sm:px-8 xl:max-w-6xl 2xl:mt-24 2xl:max-w-7xl'>
+      <h1 className='text-center text-blue-400 sm:mb-2'>Current Projects.</h1>
+      <div className='mx-auto grid grid-cols-1 gap-8 lg:grid-cols-2'>
+        {currentProjects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
+        ))}
+      </div>
+      <h1 className='text-center sm:my-2'>Deprecated Projects.</h1>
+      <div className='mx-auto grid grid-cols-1 gap-8 lg:grid-cols-2'>
+        {depricatedProjects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
+        ))}
+      </div>
+    </section>
+  )
+}
