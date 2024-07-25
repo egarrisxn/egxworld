@@ -48,30 +48,14 @@
     --ring: 224.3 76.3% 48%;
   }
 }
+
+/*! App */
 @layer base {
   * {
     @apply border-border;
   }
   body {
-    @apply bg-background font-mono text-foreground antialiased;
-  }
-  main {
-    @apply mx-auto my-12 flex min-h-screen flex-col items-center;
-  }
-  header {
-    @apply py-4;
-  }
-  h1 {
-    @apply mb-4 text-3xl font-extrabold leading-none lg:text-4xl 2xl:text-7xl;
-  }
-  h2 {
-    @apply mb-4 text-2xl font-extrabold tracking-tighter sm:tracking-wide lg:text-3xl 2xl:text-6xl;
-  }
-  h3 {
-    @apply mb-4 text-xl font-semibold leading-tight tracking-tight sm:tracking-normal lg:text-2xl 2xl:text-5xl;
-  }
-  p {
-    @apply my-4 leading-relaxed 2xl:text-xl;
+    @apply bg-background font-mono text-foreground;
   }
 }
 
@@ -94,46 +78,4 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #ffffff;
-}
-
-/*! Active Navbar */
-.link0,
-.link1,
-.link2,
-.link3 {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s ease;
-}
-.link0:hover {
-  color: #fbbf24;
-}
-.link0.active {
-  font-weight: bold;
-  color: #fbbf24;
-  border-bottom: 2px solid #fbbf24;
-}
-.link1:hover {
-  color: #34d399;
-}
-.link1.active {
-  font-weight: bold;
-  color: #34d399;
-  border-bottom: 2px solid #34d399;
-}
-.link2:hover {
-  color: #60a5fa;
-}
-.link2.active {
-  font-weight: bold;
-  color: #60a5fa;
-  border-bottom: 2px solid #60a5fa;
-}
-.link3:hover {
-  color: #f87171;
-}
-.link3.active {
-  font-weight: bold;
-  color: #f87171;
-  border-bottom: 2px solid #f87171;
 }

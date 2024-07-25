@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import {Card, CardHeader, CardTitle, CardContent, CardFooter} from '@/components/ui/card'
 import {Button} from '@/components/ui/button'
 
@@ -14,24 +15,24 @@ export default function ProjectCard({project}) {
           className='rounded border-2'
         />
       </CardHeader>
-      <CardTitle className='text-xl text-blue-400 hover:text-yellow-400 hover:underline hover:underline-offset-4'>
-        <a href={project.websiteLink} target='_blank' rel='noopener noreferrer'>
+      <CardTitle className='text-blue-400 hover:text-yellow-400 hover:underline hover:underline-offset-4'>
+        <Link href={project.websiteLink} target='_blank' rel='noopener noreferrer'>
           {project.title}
-        </a>
+        </Link>
       </CardTitle>
       <CardContent>
         <p className='line-clamp-4'>{project.description}</p>
       </CardContent>
       <CardFooter>
         <Button variant='outline' size='sm'>
-          <a href={project.websiteLink} target='_blank' rel='noopener noreferrer'>
+          <Link href={project.websiteLink} target='_blank' rel='noopener noreferrer'>
             Link
-          </a>
+          </Link>
         </Button>
         <Button variant='outline' size='sm'>
-          <a href={project.repositoryLink} target='_blank' rel='noopener noreferrer'>
+          <Link href={project.repositoryLink} target='_blank' rel='noopener noreferrer'>
             Repo
-          </a>
+          </Link>
         </Button>
       </CardFooter>
     </Card>

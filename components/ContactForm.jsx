@@ -13,7 +13,7 @@ const formSchema = z.object({
   message: z.string().min(10).max(500),
 })
 
-export default function ContactForm() {
+export function ContactForm() {
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -30,9 +30,8 @@ export default function ContactForm() {
   }
 
   return (
-    <section className='mx-auto mt-12 flex max-w-5xl flex-col gap-12 px-4 sm:mt-16 sm:px-8 xl:max-w-6xl 2xl:mt-24 2xl:max-w-7xl'>
-      <h1 className='text-center text-red-400 sm:mb-2'>Let&apos;s Connect!</h1>
-      <div className='md:rounded-xl md:border-2 md:border-red-400 md:p-16 md:shadow-xl 2xl:p-24 dark:shadow-red-300/20'>
+    <>
+      <section className='md:rounded-xl md:border-2 md:border-red-400 md:p-16 md:shadow-xl 2xl:p-24 dark:shadow-red-300/20'>
         <div className='mx-auto flex w-full flex-col'>
           <Form {...form}>
             <form
@@ -99,10 +98,7 @@ export default function ContactForm() {
             </form>
           </Form>
         </div>
-      </div>
-      <div className='mx-2 rounded-lg border bg-foreground/10 px-4 text-center text-sm text-foreground shadow-lg sm:mx-auto lg:text-lg 2xl:mt-8 2xl:text-2xl dark:shadow-red-300/10'>
-        <p>Thank you for taking the time to check me out. &#9829;</p>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }

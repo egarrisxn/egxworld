@@ -3,7 +3,7 @@ import {GeistSans} from 'geist/font/sans'
 import {GeistMono} from 'geist/font/mono'
 import {ThemeProvider} from '@/components/ThemeProvider'
 import {Analytics} from '@vercel/analytics/react'
-import Navbar from '@/components/Navbar'
+import {Navbar} from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata = {
@@ -50,7 +50,7 @@ export default function RootLayout({children}) {
       suppressHydrationWarning
       className={`${GeistSans.variable} ${GeistMono.variable} scroll-smooth antialiased`}
     >
-      <body>
+      <body className='grid min-h-[100dvh] grid-rows-[auto_1fr_auto]'>
         <ThemeProvider
           attribute='class'
           defaultTheme='system'
@@ -58,11 +58,11 @@ export default function RootLayout({children}) {
           disableTransitionOnChange
         >
           <Navbar />
-          {children}
+          <main>{children}</main>
           <Footer />
         </ThemeProvider>
-        <Analytics />
       </body>
+      <Analytics />
     </html>
   )
 }
