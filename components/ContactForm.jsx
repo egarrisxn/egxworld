@@ -31,7 +31,7 @@ export function ContactForm() {
 
   return (
     <>
-      <section className='md:rounded-xl md:border-2 md:border-red-400 md:p-16 md:shadow-xl 2xl:p-24 dark:shadow-red-300/20'>
+      <section className='md:rounded-xl md:border-2 md:border-red-400 md:p-16 md:shadow-xl lg:mx-12 lg:p-12 2xl:mx-16 2xl:p-24 dark:shadow-red-300/20'>
         <div className='mx-auto flex w-full flex-col'>
           <Form {...form}>
             <form

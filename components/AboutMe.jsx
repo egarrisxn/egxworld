@@ -5,46 +5,48 @@ import GitHubCalendar from 'react-github-calendar'
 export function AboutMe() {
   return (
     <>
-      <section className='flex flex-col gap-12 border-b border-green-400 pb-16'>
+      <section className='flex flex-col gap-12 pb-2 lg:border-b lg:border-green-400 lg:pb-16'>
         <article>
-          <h2 className='mb-4 text-2xl font-extrabold xl:text-4xl 2xl:text-7xl'>
+          <h2 className='mb-4 text-2xl font-extrabold leading-7 lg:text-3xl lg:leading-9 xl:text-4xl 2xl:text-6xl'>
             Hello, World! I&apos;m <span className='font-black text-green-400'>Ethan</span>, a
             passionate Full Stack Developer & Digital Product Designer based in Orlando, Florida,
             USA.
           </h2>
-          <p className='my-4'>
-            After a fulfilling career run in the worlds of hospitality, management, marketing, and
-            sales, I decided to embarked on a NEW and exciting journey into the world of tech! My
-            foundation was built through a rigorous Full Stack Coding Boot Camp at the University of
-            Central Florida, and I continually expand my skills through self-teaching and
-            coursework, including Harvard&apos;s CS50x. I thrive on leveraging JavaScript libraries
-            and frameworks to bring creative visions to life, ensuring each project is both
-            technically robust and visually captivating.
-          </p>
-          <p className='my-4'>
-            Beyond coding, I draw inspiration from exploring new music, enjoying quality time with
-            family and friends, and adventuring in the great outdoors. These interests shape my
-            approach, enhancing my ability to create solutions that truly resonate.
-          </p>
-          <p className='my-4'>
-            Let&apos;s collaborate and work together to transform your ideas into impactful digital
-            experiences.
-          </p>
-          <p className='my-4 font-black'>
-            Together, I bet we could build something pretty extraordinary! -EG
-          </p>
+          <div className='mt-4 grid grid-cols-1 gap-4 text-sm sm:text-base xl:gap-6 xl:text-xl 2xl:text-3xl'>
+            <p>
+              After a fulfilling career run in the worlds of hospitality, management, marketing, and
+              sales, I decided to embarked on a NEW and exciting journey into the world of tech! My
+              foundation was built through a rigorous Full Stack Coding Boot Camp at the University
+              of Central Florida, and I continually expand my skills through self-teaching and
+              coursework, including Harvard&apos;s CS50x. I thrive on leveraging JavaScript
+              libraries and frameworks to bring creative visions to life, ensuring each project is
+              both technically robust and visually captivating.
+            </p>
+            <p>
+              Beyond coding, I draw inspiration from exploring new music, enjoying quality time with
+              family and friends, and adventuring in the great outdoors. These interests shape my
+              approach, enhancing my ability to create solutions that truly resonate.
+            </p>
+            <p>
+              Let&apos;s collaborate and work together to transform your ideas into impactful
+              digital experiences.
+            </p>
+            <p className='font-black'>
+              Together, I bet we could build something pretty extraordinary! -EG
+            </p>
+          </div>
         </article>
       </section>
-      <section className='flex flex-col lg:border-b lg:border-green-400 lg:pb-16'>
-        <div className='mb-8 text-center'>
-          <h3 className='my-4 text-xl font-semibold xl:text-3xl 2xl:text-5xl'>
-            <span className='font-bold text-green-300'>Technologies</span> &{' '}
-            <span className='font-bold text-green-300'>tools</span> <br className='sm:hidden' />
+
+      <section className='flex flex-col rounded-lg border-2 bg-muted-foreground/10 px-4 pb-6 pt-4 shadow-md shadow-accent-foreground md:pb-8 lg:rounded-none lg:border-b lg:border-l-0 lg:border-r-0 lg:border-t-0 lg:border-green-400 lg:bg-transparent lg:px-0 lg:pb-16 lg:pt-0 lg:shadow-none'>
+        <div className='mb-6 text-center sm:mb-8'>
+          <h3 className='my-2 text-xl font-semibold sm:my-4 xl:text-3xl 2xl:text-5xl'>
+            <span className='font-bold text-green-400'>Technologies</span> &{' '}
+            <span className='font-bold text-green-400'>tools</span> <br className='sm:hidden' />
             in my arsenal:
           </h3>
         </div>
-
-        <div className='mx-auto flex max-w-5xl flex-wrap justify-center gap-8 text-xl lg:text-3xl'>
+        <div className='mx-auto flex max-w-5xl flex-wrap justify-center gap-4 text-xl sm:gap-8 lg:text-3xl'>
           <TooltipProvider>
             <Icon href='https://alpinejs.dev/' label='Alpine.js'>
               <path

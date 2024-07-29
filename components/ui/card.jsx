@@ -14,7 +14,7 @@ const Card = React.forwardRef(({className, ...props}, ref) => (
 Card.displayName = 'Card'
 
 const CardHeader = React.forwardRef(({className, ...props}, ref) => (
-  <div ref={ref} className={cn('mx-auto flex p-6', className)} {...props} />
+  <div ref={ref} className={cn('mx-auto flex justify-center p-6', className)} {...props} />
 ))
 CardHeader.displayName = 'CardHeader'
 

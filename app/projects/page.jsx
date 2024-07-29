@@ -46,7 +46,7 @@ export default function ProjectsPage() {
             </TooltipProvider>
           </div>
         </header>
-        <section className='mx-auto grid grid-cols-1 gap-8 lg:grid-cols-2'>
+        <section className='mx-auto grid grid-cols-1 gap-8 md:grid-cols-2'>
           {currentProjects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
@@ -54,7 +54,7 @@ export default function ProjectsPage() {
         <h2 className='text-sm font-black uppercase tracking-widest md:text-lg lg:text-xl 2xl:text-4xl'>
           Archived Work.
         </h2>
-        <section className='mx-auto grid grid-cols-1 gap-8 lg:grid-cols-2'>
+        <section className='mx-auto grid grid-cols-1 gap-8 md:grid-cols-2'>
           {depricatedProjects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
