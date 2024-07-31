@@ -5,9 +5,9 @@ import {SocialsList} from '@/components/IconsList'
 
 export function Hero() {
   return (
-    <>
-      <section className='flex flex-col gap-4'>
-        <figure className='max-h-24 max-w-24 xl:max-h-full xl:max-w-full'>
+    <div className='mx-auto flex flex-col justify-center min-[400px]:mx-8 sm:mx-16 xl:mx-auto'>
+      <section className='flex flex-col gap-4 md:flex-row 2xl:gap-5'>
+        <figure className='max-h-24 max-w-24 md:flex md:items-center lg:max-h-full lg:max-w-full'>
           <Image src='/other/hero-image.png' width={200} height={200} priority alt='My Photo' />
         </figure>
         <header className='flex w-full flex-col gap-1 2xl:gap-3'>
@@ -25,12 +25,12 @@ export function Hero() {
           </div>
           <div className='group relative ml-0.5 overflow-hidden lg:ml-1'>
             <div className='transition-transform duration-300 group-hover:-translate-y-16'>
-              <h5 className='flex cursor-default bg-gradient-to-tl from-black to-zinc-300 bg-clip-text text-xs font-light leading-tight tracking-normal text-transparent delay-75 min-[320px]:text-base min-[430px]:text-xl min-[560px]:text-2xl lg:text-4xl 2xl:text-5xl'>
+              <h5 className='flex cursor-default bg-gradient-to-tl from-black to-zinc-300 bg-clip-text text-xs font-light leading-tight tracking-tight text-transparent delay-75 min-[320px]:text-base min-[430px]:text-xl min-[560px]:text-2xl lg:text-4xl 2xl:text-5xl'>
                 Full Stack Developer.
               </h5>
             </div>
             <div className='absolute left-0 top-0 translate-y-16 transition-transform duration-300 group-hover:translate-y-0'>
-              <h5 className='flex cursor-default bg-gradient-to-tl from-black to-zinc-300 bg-clip-text text-xs font-light leading-tight tracking-tighter text-transparent delay-75 min-[320px]:text-base min-[430px]:text-xl min-[560px]:text-2xl lg:text-4xl 2xl:text-5xl'>
+              <h5 className='flex cursor-default bg-gradient-to-tl from-black to-zinc-300 bg-clip-text text-xs font-light leading-tight tracking-tight text-transparent delay-75 min-[320px]:text-base min-[430px]:text-xl min-[560px]:text-2xl lg:text-4xl 2xl:text-5xl'>
                 Digital Product Designer.
               </h5>
             </div>
@@ -38,8 +38,8 @@ export function Hero() {
         </header>
       </section>
 
-      <section className='my-4 2xl:my-5'>
-        <p className='text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-4xl'>
+      <section className='my-4 2xl:my-7'>
+        <p className='text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-4xl 2xl:leading-normal'>
           &quot;Crafting innovative web technologies and applications that blend seamless
           functionality with elegant design is kind of my thing.&quot;
         </p>
@@ -55,9 +55,7 @@ export function Hero() {
             size='sm'
             className='2xl:px-6 2xl:py-4 2xl:text-3xl dark:bg-slate-800 dark:hover:bg-slate-900'
           >
-            <Link href='/about' target='_blank' rel='noopener noreferrer'>
-              Learn More
-            </Link>
+            <Link href='/#about'>Learn More</Link>
           </Button>
           <Button
             variant='outline'
@@ -70,6 +68,6 @@ export function Hero() {
           </Button>
         </div>
       </section>
-    </>
+    </div>
   )
 }
