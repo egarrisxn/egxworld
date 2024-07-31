@@ -4,14 +4,14 @@ import {ThemeSwap} from './ThemeSwap'
 
 export function Navbar() {
   return (
-    <div className='sticky top-0 z-50 bg-background'>
+    <div className='sticky top-0 z-50 border-b border-foreground bg-background shadow-md shadow-muted-foreground/80'>
       <nav className='flex flex-row items-center justify-between text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-3xl'>
         <section className='bg-foreground p-1.5 text-background md:p-4 xl:p-6'>
           <NavItem href='/#' label='eg'>
             eg
           </NavItem>
         </section>
-        <section className='flex-grow p-1.5 md:p-4 xl:p-6'>
+        <section className='flex-grow bg-background p-1.5 text-foreground md:p-4 xl:p-6'>
           <div className='flex sm:gap-4 md:gap-8 lg:gap-12 xl:gap-16 2xl:gap-20'>
             <NavItem href='/#about' label='about'>
               about

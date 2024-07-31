@@ -5,7 +5,7 @@ import {Button} from '@/components/ui/button'
 
 export function ProjectCard({project}) {
   return (
-    <Card className='border-blue-400 shadow-xl dark:shadow-blue-300/20'>
+    <Card className='border-blue-400 bg-background shadow-lg dark:shadow-blue-300/20'>
       <CardHeader>
         <Image
           src={project.image}

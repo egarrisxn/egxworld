@@ -2,18 +2,18 @@ import Image from 'next/image'
 
 const bannerInfo = {
   welcome: {
-    className: 'bg-yellow-400/20 dark:bg-yellow-400',
+    className: 'bg-yellow-400 dark:bg-yellow-300',
     src: '/banners/WELCOME.svg',
     alt: 'welcome',
   },
-  about: {className: 'bg-green-400/20 dark:bg-green-400', src: '/banners/ABOUT.svg', alt: 'about'},
+  about: {className: 'bg-green-400 dark:bg-green-300', src: '/banners/ABOUT.svg', alt: 'about'},
   projects: {
-    className: 'bg-blue-400/20 dark:bg-blue-400',
+    className: 'bg-blue-400 dark:bg-blue-300',
     src: '/banners/PROJECTS.svg',
     alt: 'projects',
   },
   contact: {
-    className: 'bg-red-400/20 dark:bg-red-400',
+    className: 'bg-red-400 dark:bg-red-300',
     src: '/banners/CONTACT.svg',
     alt: 'contact',
   },
@@ -25,7 +25,9 @@ export function Banner({title}) {
     return null
   }
   return (
-    <div className={`${className} flex w-full justify-center py-8`}>
+    <div
+      className={`${className} flex w-full justify-center border-b border-foreground bg-background py-8 shadow-md shadow-muted-foreground/80`}
+    >
       <Image src={src} width={2560} height={200} alt={alt} />
     </div>
   )

@@ -31,7 +31,7 @@ export function ContactForm() {
 
   return (
     <div className='mx-auto flex flex-col min-[400px]:mx-8 sm:mx-16 xl:mx-0'>
-      <div className='md:rounded-xl md:border-2 md:border-red-400 md:p-16 md:shadow-xl lg:p-12 xl:p-16 dark:shadow-red-300/20'>
+      <div className='md:rounded-xl md:border-4 md:border-red-400 md:p-16 md:shadow-lg lg:p-12 xl:p-16 dark:shadow-red-300/20'>
         <Form {...form}>
           <form
             onSubmit={handleSubmit(onSubmit)}

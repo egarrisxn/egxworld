@@ -3,7 +3,7 @@ import Link from 'next/link'
 import {Button} from '@/components/ui/button'
 import {SocialsList} from '@/components/IconsList'
 
-export function Hero() {
+export function HeroContent() {
   return (
     <div className='mx-auto flex flex-col justify-center min-[400px]:mx-8 sm:mx-16 xl:mx-auto'>
       <section className='flex flex-col gap-4 md:flex-row 2xl:gap-5'>
@@ -18,7 +18,7 @@ export function Hero() {
               </h4>
             </div>
             <div className='absolute left-0 top-0 translate-y-32 transition-transform duration-300 group-hover:translate-y-0'>
-              <h4 className='pointer-events-none bg-gradient-to-br from-zinc-600 to-zinc-950 bg-clip-text text-4xl font-bold tracking-wider text-transparent min-[320px]:text-5xl min-[430px]:text-6xl min-[560px]:text-7xl lg:text-[7rem] 2xl:text-[9rem]'>
+              <h4 className='pointer-events-none bg-gradient-to-br from-zinc-500 to-zinc-900 bg-clip-text text-4xl font-bold tracking-wider text-transparent min-[320px]:text-5xl min-[430px]:text-6xl min-[560px]:text-7xl lg:text-[7rem] 2xl:text-[9rem]'>
                 Ethan G.
               </h4>
             </div>
@@ -38,8 +38,8 @@ export function Hero() {
         </header>
       </section>
 
-      <section className='my-4 2xl:my-7'>
-        <p className='text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-4xl 2xl:leading-normal'>
+      <section className='my-4 xl:my-5 2xl:my-7'>
+        <p className='text-sm md:text-base lg:text-lg xl:text-2xl xl:leading-normal 2xl:text-4xl'>
           &quot;Crafting innovative web technologies and applications that blend seamless
           functionality with elegant design is kind of my thing.&quot;
         </p>
@@ -49,7 +49,7 @@ export function Hero() {
         <div className='order-1 my-4 flex flex-row justify-center gap-4 text-2xl min-[440px]:justify-start md:text-3xl lg:order-2 lg:text-4xl 2xl:pl-1 2xl:text-5xl'>
           <SocialsList />
         </div>
-        <div className='order-2 mt-4 flex flex-col gap-4 min-[440px]:flex-row lg:order-1 lg:mb-4 2xl:gap-6'>
+        <div className='order-2 my-4 flex flex-col gap-4 min-[440px]:flex-row lg:order-1 2xl:gap-6'>
           <Button
             variant='outline'
             size='sm'

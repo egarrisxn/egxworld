@@ -2,9 +2,9 @@ import './globals.css'
 import {GeistSans} from 'geist/font/sans'
 import {GeistMono} from 'geist/font/mono'
 import {ThemeProvider} from '@/components/ThemeProvider'
-import {Analytics} from '@vercel/analytics/react'
 import {Navbar} from '@/components/Navbar'
 import {Footer} from '@/components/Footer'
+import {Analytics} from '@vercel/analytics/react'
 
 export const metadata = {
   metadataBase: new URL('https://www.egxworld.net/'),
@@ -50,7 +50,7 @@ export default function RootLayout({children}) {
       suppressHydrationWarning
       className={`${GeistSans.variable} ${GeistMono.variable} scroll-smooth antialiased`}
     >
-      <body>
+      <body className='bg-background font-mono text-foreground'>
         <ThemeProvider
           attribute='class'
           defaultTheme='system'
