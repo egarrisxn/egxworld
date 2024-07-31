@@ -4,7 +4,7 @@ import {GeistMono} from 'geist/font/mono'
 import {ThemeProvider} from '@/components/ThemeProvider'
 import {Analytics} from '@vercel/analytics/react'
 import {Navbar} from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import {Footer} from '@/components/Footer'
 
 export const metadata = {
   metadataBase: new URL('https://www.egxworld.net/'),
@@ -50,7 +50,7 @@ export default function RootLayout({children}) {
       suppressHydrationWarning
       className={`${GeistSans.variable} ${GeistMono.variable} scroll-smooth antialiased`}
     >
-      <body className='grid min-h-[100dvh] grid-rows-[auto_1fr_auto]'>
+      <body>
         <ThemeProvider
           attribute='class'
           defaultTheme='system'
@@ -58,7 +58,7 @@ export default function RootLayout({children}) {
           disableTransitionOnChange
         >
           <Navbar />
-          <main>{children}</main>
+          {children}
           <Footer />
         </ThemeProvider>
       </body>

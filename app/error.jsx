@@ -1,6 +1,6 @@
 'use client'
 
-const Error = ({error, reset}) => {
+export default function Error({error, reset}) {
   return (
     <div className='flex min-h-screen flex-col items-center justify-center'>
       <p className='my-4 text-2xl font-semibold'>Something went wrong!</p>
@@ -11,5 +11,3 @@ const Error = ({error, reset}) => {
     </div>
   )
 }
-
-export default Error

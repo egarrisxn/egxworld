@@ -3,7 +3,7 @@ import Link from 'next/link'
 import {Card, CardHeader, CardTitle, CardContent, CardFooter} from '@/components/ui/card'
 import {Button} from '@/components/ui/button'
 
-export default function ProjectCard({project}) {
+export function ProjectCard({project}) {
   return (
     <Card className='border-blue-400 shadow-xl dark:shadow-blue-300/20'>
       <CardHeader>

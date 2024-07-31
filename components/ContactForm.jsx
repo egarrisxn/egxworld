@@ -3,9 +3,9 @@ import {useForm} from 'react-hook-form'
 import {zodResolver} from '@hookform/resolvers/zod'
 import {z} from 'zod'
 import {sendEmail} from '@/lib/sendEmail'
-import {Button} from '@/components/ui/button'
-import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage} from '@/components/ui/form'
-import {Input} from '@/components/ui/input'
+import {Button} from './ui/button'
+import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage} from './ui/form'
+import {Input} from './ui/input'
 
 const formSchema = z.object({
   name: z.string().min(3).max(100),
@@ -31,7 +31,7 @@ export function ContactForm() {
 
   return (
     <>
-      <section className='md:rounded-xl md:border-2 md:border-red-400 md:p-16 md:shadow-xl lg:mx-12 lg:p-12 2xl:mx-16 2xl:p-24 dark:shadow-red-300/20'>
+      <section className='md:rounded-xl md:border-2 md:border-red-400 md:p-16 md:shadow-xl lg:p-12 xl:p-16 dark:shadow-red-300/20'>
         <div className='mx-auto flex w-full flex-col'>
           <Form {...form}>
             <form
@@ -84,16 +84,28 @@ export function ContactForm() {
                   </FormItem>
                 )}
               />
-              <div className='flex justify-center'>
+              <div className='flex justify-center 2xl:pt-4'>
                 <Button
                   variant='outline'
                   size='sm'
-                  className='w-full bg-red-400 hover:bg-red-500'
+                  className='w-full bg-red-400 hover:bg-red-500 lg:mx-52'
                   type='submit'
                   disabled={formState.isSubmitting}
                 >
                   Submit
                 </Button>
+              </div>
+              <div className='mx-auto max-w-[24rem] px-4 pt-2 text-center text-sm sm:pt-8 lg:pt-4 2xl:pt-2 2xl:text-lg'>
+                <p>
+                  If forms aren't your thing, go ahead and email me at{' '}
+                  <a
+                    href='egarrisxn@gmail.com'
+                    className='text-slate-400 underline underline-offset-4 hover:text-slate-600'
+                  >
+                    egarrisxn@gmail.com
+                  </a>
+                  .
+                </p>
               </div>
             </form>
           </Form>
