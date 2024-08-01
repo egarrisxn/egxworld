@@ -1,10 +1,13 @@
 {
   "name": "egxworld",
-  "short_name": "egxworld",
+  "short_name": "eg",
   "description": "Full Stack Developer. Digital Product Designer.",
+  "start_url": "/",
+  "lang": "en",
+  "dir": "auto",
   "display": "standalone",
-  "background_color": "#fff",
-  "theme_color": "#fff",
+  "background_color": "#eaeaea",
+  "theme_color": "#eaeaea",
   "icons": [
     {
       "src": "/icon-192x192.png",

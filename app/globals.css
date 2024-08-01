@@ -5,51 +5,50 @@
 /*! Shadcn-UI */
 @layer base {
   :root {
-    --background: 0 0% 92%;
-    --foreground: 222.2 87% 6%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
+    --background: 0 0% 92%; /*#eaeaea*/
+    --foreground: 222.2 87% 6%; /*#01091c*/
+    --card: 0 0% 92%; /*#eaeaea*/
+    --card-foreground: 222.2 87% 6%; /*#01091c*/
+    --popover: 0 0% 92%; /*#eaeaea*/
+    --popover-foreground: 222.2 87% 6%; /*#01091c*/
+    --primary: 221.2 83.2% 53.3%; /*#2563eb*/
+    --primary-foreground: 210 40% 98%; /*#f8fafc*/
+    --secondary: 210 40% 96.1%; /*#f1f5f9*/
+    --secondary-foreground: 222.2 47.4% 11.2%; /*#0f172a*/
+    --muted: 210 40% 96.1%; /*#f1f5f9*/
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --accent: 210 40% 96.1%; /*#f1f5f9*/
+    --accent-foreground: 222.2 47.4% 11.2%; /*#0f172a*/
+    --destructive: 0 84.2% 60.2%; /*#ef4444*/
+    --destructive-foreground: 210 40% 98%; /*#f8fafc*/
+    --border: 214.3 31.8% 91.4%; /*#e2e8f0*/
+    --input: 222.2 87% 6%; /*#01091c*/
+    --ring: 221.2 83.2% 53.3%; /*#2563eb*/
     --radius: 0.5rem;
   }
   .dark {
-    --background: 222.2 87% 6%;
-    --foreground: 0 0% 92%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
+    --background: 222.2 87% 6%; /*#01091c*/
+    --foreground: 0 0% 92%; /*#eaeaea*/
+    --card: 222.2 84% 4.9%; /*#020817*/
+    --card-foreground: 210 40% 98%; /*#f8fafc*/
+    --popover: 222.2 84% 4.9%; /*#020817*/
+    --popover-foreground: 210 40% 98%; /*#f8fafc*/
+    --primary: 217.2 91.2% 59.8%; /*#3b82f6*/
+    --primary-foreground: 222.2 47.4% 11.2%; /*#0f172a*/
+    --secondary: 217.2 32.6% 17.5%; /*#1e293b*/
+    --secondary-foreground: 210 40% 98%; /*#f8fafc*/
+    --muted: 217.2 32.6% 17.5%; /*#1e293b*/
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
+    --accent: 217.2 32.6% 17.5%; /*#1e293b*/
+    --accent-foreground: 210 40% 98%; /*#f8fafc*/
+    --destructive: 0 62.8% 30.6%; /*#7f1d1d*/
+    --destructive-foreground: 210 40% 98%; /*#f8fafc*/
+    --border: 217.2 32.6% 17.5%; /*#1e293b*/
+    --input: 217.2 32.6% 17.5%; /*#1e293b*/
+    --ring: 224.3 76.3% 48%; /*#1d4ed8*/
   }
 }
 
-/*! App */
 @layer base {
   * {
     @apply border-border;
@@ -60,7 +59,7 @@
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #3985ff #ffffff;
+  scrollbar-color: #94a3b8 #eaeaea;
 }
 /* Chrome & Others */
 ::-webkit-scrollbar {
@@ -68,11 +67,11 @@
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #3985ff;
+  background: #94a3b8;
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffffff;
+  background: #eaeaea;
 }

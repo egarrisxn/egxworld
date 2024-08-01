@@ -4,6 +4,7 @@ import {GeistMono} from 'geist/font/mono'
 import {ThemeProvider} from '@/components/ThemeProvider'
 import {Navbar} from '@/components/Navbar'
 import {Footer} from '@/components/Footer'
+import {Toaster} from '@/components/ui/toaster'
 import {Analytics} from '@vercel/analytics/react'
 
 export const metadata = {
@@ -50,16 +51,12 @@ export default function RootLayout({children}) {
       suppressHydrationWarning
       className={`${GeistSans.variable} ${GeistMono.variable} scroll-smooth antialiased`}
     >
-      <body className='bg-background font-mono text-foreground'>
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='system'
-          enableSystem
-          disableTransitionOnChange
-        >
+      <body className='grid min-h-[100dvh] grid-rows-[auto_1fr_auto] bg-background font-mono text-foreground'>
+        <ThemeProvider>
           <Navbar />
-          {children}
+          <main>{children}</main>
           <Footer />
+          <Toaster />
         </ThemeProvider>
       </body>
       <Analytics />

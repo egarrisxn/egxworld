@@ -7,7 +7,7 @@ export default function Error({error, reset}) {
       <button onClick={reset} className='rounded-lg border-2 bg-blue-500 px-8 shadow-lg'>
         Refresh
       </button>
-      <pre>{error.message}</pre>
+      <pre className='flex max-w-96 flex-wrap'>{error.message}</pre>
     </div>
   )
 }
