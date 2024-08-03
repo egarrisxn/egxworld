@@ -5,10 +5,10 @@ export function Header({title, icons, className}) {
   const headerClassName = className ? className : defaultClassName
 
   return (
-    <header className='flex flex-row items-center justify-between text-sm md:px-2 md:text-lg lg:text-xl 2xl:text-4xl'>
-      <h2 className={`${headerClassName} font-black uppercase tracking-widest`}>{title}</h2>
+    <header className='flex flex-row items-center justify-between text-sm md:px-2 md:text-lg lg:text-2xl 2xl:text-4xl'>
+      <div className={`${headerClassName} font-black uppercase tracking-widest`}>{title}</div>
 
-      <div className='flex gap-[0.2rem] md:gap-3 lg:gap-4'>
+      <div className='flex gap-[0.2rem] md:gap-2 lg:gap-3 2xl:gap-4'>
         {icons.map((icon, index) => (
           <Icon
             key={index}

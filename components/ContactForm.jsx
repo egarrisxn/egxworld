@@ -41,11 +41,11 @@ export function ContactForm() {
   }
 
   return (
-    <div className='min-[400px]:mx-6 sm:mx-16 lg:rounded-xl lg:border-2 lg:border-red-400 lg:p-12 lg:shadow-[4px_4px_10px_0px] lg:shadow-foreground/40 xl:mx-0 xl:p-16 dark:lg:border-red-300 dark:lg:shadow-none'>
+    <div className='mx-auto sm:mx-12 lg:mx-16 lg:rounded-xl lg:border-2 lg:border-foreground lg:shadow-[2px_4px_6px_0px_#01091c] dark:lg:shadow-none'>
       <Form {...form}>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className='space-y-8 xl:px-2 xl:text-xl 2xl:text-2xl'
+          className='space-y-6 px-2 lg:space-y-8 lg:p-12 xl:p-16 xl:text-xl 2xl:text-2xl'
         >
           <FormField
             control={form.control}
@@ -86,9 +86,9 @@ export function ContactForm() {
               </FormItem>
             )}
           />
-          <div className='justify-center= mx-auto flex px-1 pt-2'>
+          <div className='mx-auto flex justify-center p-1 2xl:pt-3'>
             <Button
-              className='w-full border border-foreground bg-red-400 shadow-[2px_4px_6px_0px_#01091c] hover:bg-red-500 lg:border-2 2xl:mx-36 dark:border-0 dark:bg-red-300 dark:hover:bg-red-400'
+              className='w-full max-w-xl bg-red-400 text-background hover:bg-red-500 hover:text-black dark:bg-red-300 dark:hover:bg-red-400'
               size='sm'
               variant='secondary'
               type='submit'
@@ -97,7 +97,7 @@ export function ContactForm() {
               Submit
             </Button>
           </div>
-          <div className='mx-auto max-w-[24rem] px-4 text-center text-xs sm:text-sm 2xl:text-lg'>
+          <div className='mx-auto max-w-sm px-4 text-center text-xs sm:text-sm 2xl:max-w-lg 2xl:text-xl'>
             <p>
               If forms aren't your thing, go ahead and email me at{' '}
               <a

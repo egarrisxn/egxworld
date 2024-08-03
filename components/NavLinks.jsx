@@ -4,7 +4,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 const pathColorMap = {
-  '/': {active: 'text-yellow-400', hover: 'hover:text-yellow-300'},
+  '/': {active: 'text-background', hover: 'hover:text-slate-500'},
   '/about': {active: 'text-green-400', hover: 'hover:text-green-300'},
   '/projects': {active: 'text-blue-400', hover: 'hover:text-blue-300'},
   '/contact': {active: 'text-red-400', hover: 'hover:text-red-300'},

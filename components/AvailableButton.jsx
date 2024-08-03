@@ -4,7 +4,7 @@ export function AvailableButton() {
       <div className='flex size-5 rounded-full bg-green-700 2xl:size-6'>
         <div className='m-auto size-3 animate-ping rounded-full bg-green-600 2xl:size-4'></div>
       </div>
-      <span className='text-xs font-extrabold leading-snug tracking-tight text-green-900 group-hover:text-black 2xl:text-base'>
+      <span className='text-xs font-extrabold leading-snug tracking-tight text-green-900 transition-colors duration-100 ease-in group-hover:text-black 2xl:text-base'>
         Available for work!
       </span>
     </button>
