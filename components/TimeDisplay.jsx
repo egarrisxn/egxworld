@@ -22,13 +22,13 @@ const TimeDisplay = () => {
   )
 }
 
-export default function TimeOfDay() {
+export function TimeOfDay() {
   return (
     <div
-      className='flex flex-row gap-1 tracking-tighter text-inherit 2xl:text-2xl'
+      className='flex flex-row items-end gap-2 text-sm text-inherit lg:flex-col lg:gap-0 lg:text-lg'
       aria-label='Time of day'
     >
-      <span className='font-semibold 2xl:text-2xl'>Orlando, Fl: </span>
+      <span className='font-semibold tracking-[-0.10em] lg:text-base'>Orlando, FL, USA</span>
       <TimeDisplay />
     </div>
   )

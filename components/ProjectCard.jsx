@@ -5,7 +5,7 @@ import {Button} from '@/components/ui/button'
 
 export function ProjectCard({project}) {
   return (
-    <Card className='border-blue-400 dark:border-blue-300 dark:shadow-blue-300/20'>
+    <Card className='border border-blue-400 shadow-[2px_4px_6px_0px] lg:shadow-foreground/40 dark:border-blue-300 dark:lg:shadow-none'>
       <CardHeader>
         <Image
           src={project.image}
@@ -24,12 +24,20 @@ export function ProjectCard({project}) {
         <p className='line-clamp-4 lg:line-clamp-3'>{project.description}</p>
       </CardContent>
       <CardFooter>
-        <Button variant='secondary' size='xs' className='hover:bg-blue-400 hover:text-background'>
+        <Button
+          variant='secondary'
+          size='xs'
+          className='border border-foreground shadow-[2px_4px_6px_0px_#01091c] hover:bg-blue-400 hover:text-background lg:border-2 dark:border-0'
+        >
           <Link href={project.websiteLink} target='_blank' rel='noopener noreferrer'>
             Link
           </Link>
         </Button>
-        <Button variant='secondary' size='xs' className='hover:text-blue-400'>
+        <Button
+          variant='secondary'
+          size='xs'
+          className='border border-foreground bg-blue-400 text-background shadow-[2px_4px_6px_0px_#01091c] hover:text-foreground lg:border-2 dark:border-0'
+        >
           <Link href={project.repositoryLink} target='_blank' rel='noopener noreferrer'>
             Repo
           </Link>

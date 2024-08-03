@@ -5,7 +5,7 @@ import {ThemeSwap} from './ThemeSwap'
 export function Navbar() {
   return (
     <div className='sticky top-0 z-50'>
-      <nav className='flex flex-row items-center justify-between bg-background text-xs shadow-md sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-3xl'>
+      <nav className='flex flex-row items-center justify-between bg-background text-xs shadow-[1px_2px_8px_0px] shadow-foreground/10 sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-3xl'>
         <section className='bg-foreground p-1.5 text-background md:p-4 xl:p-6'>
           <NavItem href='/' label='home'>
             eg

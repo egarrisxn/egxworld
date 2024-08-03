@@ -41,7 +41,7 @@ export function ContactForm() {
   }
 
   return (
-    <div className='min-[400px]:mx-6 sm:mx-16 lg:rounded-xl lg:border-2 lg:border-red-400 lg:p-12 lg:shadow-lg xl:mx-0 xl:p-16 dark:shadow-red-300/20 dark:lg:border-red-300'>
+    <div className='min-[400px]:mx-6 sm:mx-16 lg:rounded-xl lg:border-2 lg:border-red-400 lg:p-12 lg:shadow-[4px_4px_10px_0px] lg:shadow-foreground/40 xl:mx-0 xl:p-16 dark:lg:border-red-300 dark:lg:shadow-none'>
       <Form {...form}>
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -88,9 +88,9 @@ export function ContactForm() {
           />
           <div className='justify-center= mx-auto flex px-1 pt-2'>
             <Button
-              className='w-full bg-red-400 hover:bg-red-500 2xl:mx-36 dark:bg-red-300 dark:hover:bg-red-400'
+              className='w-full border border-foreground bg-red-400 shadow-[2px_4px_6px_0px_#01091c] hover:bg-red-500 lg:border-2 2xl:mx-36 dark:border-0 dark:bg-red-300 dark:hover:bg-red-400'
               size='sm'
-              variant='destructive'
+              variant='secondary'
               type='submit'
               disabled={formState.isSubmitting}
             >
