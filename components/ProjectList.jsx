@@ -3,7 +3,7 @@ import {ProjectCard} from '@/components/ProjectCard'
 
 export function ProjectList() {
   return (
-    <div className='mx-auto flex flex-col gap-10 sm:mx-16 lg:mx-16 xl:mx-auto'>
+    <div className='mx-auto flex flex-col gap-10 md:mx-12 lg:mx-16 xl:mx-auto'>
       <section className='grid grid-cols-1 gap-8 lg:grid-cols-2'>
         {currentProjects.map((project, index) => (
           <ProjectCard key={index} project={project} />

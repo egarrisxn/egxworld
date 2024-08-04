@@ -1,17 +1,18 @@
-import {TechList} from '@/components/IconsList'
-import GitHubCalendar from 'react-github-calendar'
+import {TechList} from './IconsList'
+import {GitHubDisplay} from './GitHubDisplay'
 
 export function AboutArticle() {
   return (
-    <div className='mx-auto flex flex-col justify-center lg:mx-12 xl:mx-auto'>
-      <article className='flex flex-col border-b border-green-400 py-4 pb-16 dark:border-green-300'>
-        <h2 className='mb-4 text-2xl font-extrabold leading-7 shadow-foreground drop-shadow-2xl md:text-3xl lg:mx-2 lg:text-4xl lg:leading-9 lg:tracking-wide xl:text-5xl 2xl:text-6xl'>
+    <>
+      <article className='mx-auto grid grid-cols-1 justify-center gap-4 pt-4 font-semibold shadow-foreground drop-shadow-2xl md:mx-12 lg:mx-16 xl:mx-auto dark:font-normal dark:shadow-none dark:drop-shadow-none'>
+        <h2 className='text-2xl font-extrabold leading-7 md:text-3xl lg:text-4xl lg:leading-9 lg:tracking-wide xl:text-5xl 2xl:text-6xl'>
           Hello, World! I&apos;m{' '}
           <span className='font-black text-green-400 dark:text-green-300'>Ethan</span>, a passionate
           Full Stack Developer & Digital Product Designer based in Orlando, Florida, USA.
         </h2>
-        <div className='mt-4 grid grid-cols-1 gap-4 text-sm sm:text-base lg:mx-2 xl:gap-6 xl:text-xl 2xl:text-3xl dark:shadow-none dark:drop-shadow-none'>
-          <p className='font-semibold shadow-foreground drop-shadow-2xl dark:font-normal'>
+
+        <section className='mt-4 flex flex-col gap-6 text-sm md:text-base xl:text-xl 2xl:text-3xl'>
+          <p>
             After a fulfilling career run in the worlds of hospitality, management, marketing, and
             sales, I decided to embarked on a NEW and exciting journey into the world of tech! My
             foundation was built through a rigorous Full Stack Coding Boot Camp at the University of
@@ -20,43 +21,43 @@ export function AboutArticle() {
             and frameworks to bring creative visions to life, ensuring each project is both
             technically robust and visually captivating.
           </p>
-          <p className='font-semibold shadow-foreground drop-shadow-2xl dark:font-normal'>
+
+          <p>
             Beyond coding, I draw inspiration from exploring new music, enjoying quality time with
             family and friends, and adventuring in the great outdoors. These interests shape my
             approach, enhancing my ability to create solutions that truly resonate.
           </p>
-          <p className='font-semibold shadow-foreground drop-shadow-2xl dark:font-normal'>
+
+          <p>
             Let&apos;s collaborate and work together to transform your ideas into impactful digital
             experiences.
           </p>
-          <p className='font-black shadow-foreground drop-shadow-2xl dark:font-extrabold'>
+
+          <p className='font-black dark:font-extrabold'>
             Together, I bet we could build something pretty extraordinary! -EG
           </p>
-        </div>
+
+          <div className='mt-4 flex flex-col gap-5 border-t border-green-500 pt-2 sm:flex-row sm:gap-3 sm:pt-4 md:gap-4 lg:pt-8 xl:mb-12 dark:border-green-300'>
+            <p className='h-fit sm:w-1/4 sm:border-r sm:border-green-500 sm:pr-1 xl:pr-2'>
+              <span className='font-bold text-green-500 dark:text-green-300'>Technologies</span> &{' '}
+              <span className='font-bold text-green-500 dark:text-green-300'>tools</span> I know:
+            </p>
+            <div className='flex max-w-80 flex-wrap items-center gap-1.5 sm:w-3/4 md:max-w-none lg:gap-3 lg:text-lg xl:gap-4 xl:text-2xl 2xl:pr-20'>
+              <TechList />
+            </div>
+          </div>
+
+          <div className='mt-4 flex flex-col gap-5 border-t border-green-500 pt-2 sm:flex-row sm:gap-3 sm:pt-4 md:gap-4 lg:pt-8 2xl:mb-12 dark:border-green-300'>
+            <p className='h-fit sm:w-1/4 sm:border-r sm:border-green-500 sm:pr-1 xl:pr-2'>
+              <span className='font-bold text-green-500 dark:text-green-300'>Contributions</span> &{' '}
+              <span className='font-bold text-green-500 dark:text-green-300'>time</span> on GitHub:
+            </p>
+            <div className='sm:w-3/4'>
+              <GitHubDisplay />
+            </div>
+          </div>
+        </section>
       </article>
-
-      <div className='pt-8 text-center text-xl shadow-foreground drop-shadow-2xl lg:border-b lg:border-green-400 lg:py-8 lg:text-3xl dark:lg:border-green-300'>
-        <h3 className='mb-8 mt-4 font-semibold'>
-          <span className='font-bold text-green-400 dark:text-green-300'>Technologies</span> &{' '}
-          <span className='font-bold text-green-400 dark:text-green-300'>tools</span>{' '}
-          <br className='sm:hidden' />
-          in my arsenal:
-        </h3>
-        <div className='flex flex-wrap justify-center gap-4 lg:mx-8 lg:mb-4 lg:gap-8'>
-          <TechList />
-        </div>
-      </div>
-
-      <div className='hidden text-xl lg:mx-auto lg:flex lg:flex-col lg:pt-8 lg:text-center lg:text-3xl lg:shadow-foreground lg:drop-shadow-2xl'>
-        <h3 className='mb-8 mt-4 font-semibold xl:text-3xl'>
-          <span className='font-bold text-green-400 dark:text-green-300'>Contributions</span> &{' '}
-          <span className='font-bold text-green-400 dark:text-green-300'>time</span> spent on
-          Github:
-        </h3>
-        <div className='justify-center'>
-          <GitHubCalendar username='EGARRISXN' />
-        </div>
-      </div>
-    </div>
+    </>
   )
 }

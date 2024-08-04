@@ -4,20 +4,18 @@ import {getTopTracksList} from '@/lib/spotify'
 
 export function Track({ranking, songUrl, title, artist}) {
   return (
-    <div className='mt-4 flex w-full max-w-3xl flex-row items-baseline border-b-2 border-foreground/30'>
-      <p className='text-sm font-bold text-yellow-500 2xl:text-lg dark:text-yellow-300'>
-        {ranking}.
-      </p>
-      <div className='flex flex-col pl-3'>
+    <div className='mt-3 flex flex-row items-baseline border-b-2 border-foreground/30'>
+      <p className='text-sm font-bold text-yellow-500 dark:text-yellow-300'>{ranking}</p>
+      <div className='flex flex-col pl-2'>
         <a
-          className='w-60 truncate font-medium text-zinc-900 sm:w-96 md:w-full 2xl:text-xl dark:text-zinc-100'
+          className='w-60 truncate font-medium text-zinc-900 sm:w-96 dark:text-zinc-100'
           href={songUrl}
           target='_blank'
           rel='noopener noreferrer'
         >
           {title}
         </a>
-        <p className='mb-3 w-60 truncate text-zinc-500 sm:w-96 md:w-full 2xl:text-xl'>{artist}</p>
+        <p className='mb-2 w-60 truncate text-zinc-500 sm:w-96'>{artist}</p>
       </div>
     </div>
   )
@@ -45,14 +43,13 @@ export function TopTracks({client_id, client_secret, refresh_token}) {
   return (
     <div>
       {loading ? (
-        <section className='flex-grow text-sm font-bold sm:text-base 2xl:text-2xl'>
-          Loading..
-        </section>
+        <section className='flex-grow text-sm font-bold sm:text-base'>Loading..</section>
       ) : (
         <section>
-          <h3 className='text-sm font-extrabold tracking-tight sm:text-base 2xl:text-xl'>
-            What I&apos;ve been listening to recently:
-          </h3>
+          <div className='border-b-2 border-foreground'>
+            <h3 className='mb-1 font-bold'>Top tracks for the week.</h3>
+          </div>
+
           <div>
             {tracks.map((track, index) => (
               <Track ranking={index + 1} key={track.songUrl} {...track} />

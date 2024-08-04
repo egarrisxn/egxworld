@@ -2,7 +2,8 @@ import {TooltipProvider, Tooltip, TooltipTrigger, TooltipContent} from '@/compon
 import {SOCIALS} from '@/lib/socialIcons'
 
 export const Icon = ({name, href, label, className, children}) => {
-  const defaultClassName = 'hover:text-green-400'
+  const defaultClassName =
+    'hover:text-green-400 transition-all duration-150 ease-in-out hover:border-2 hover:p-0.5 hover:rounded-md dark:hover:border-green-300 hover:border-green-500'
   const iconClassName = className ? className : defaultClassName
 
   return (

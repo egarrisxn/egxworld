@@ -54,11 +54,11 @@ export function SpotifyPlayer(props) {
                 <Image
                   alt={`${result.title} album art`}
                   src={result.albumImageUrl}
-                  className='flex size-4 rounded-sm transition-all duration-100 ease-in group-hover:ring-1 group-hover:ring-green-600 lg:size-28 lg:border-2 lg:border-foreground lg:shadow-[-2px_4px_6px_0px_#01091c] lg:group-hover:ring-4'
+                  className='flex size-4 rounded-sm transition-all duration-150 ease-in-out group-hover:ring-1 group-hover:ring-green-600 lg:size-28 lg:border-2 lg:border-foreground lg:shadow-[-2px_4px_6px_0px_#01091c] lg:group-hover:ring-4'
                   width={112}
                   height={112}
                 />
-                <p className='max-w-36 truncate text-sm tracking-[-0.10em] transition-colors duration-100 ease-in group-hover:text-green-600 sm:max-w-60 lg:max-w-28 lg:text-base'>
+                <p className='max-w-36 truncate text-sm tracking-[-0.10em] transition-colors duration-150 ease-in-out group-hover:text-green-600 sm:max-w-60 lg:max-w-28 lg:text-base'>
                   {result.artist}
                 </p>
               </div>
