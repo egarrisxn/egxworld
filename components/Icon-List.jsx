@@ -1,4 +1,4 @@
-import {Icon} from './Icons'
+import {Icon} from './Tooltip-Icon'
 
 export function SocialsList() {
   return (

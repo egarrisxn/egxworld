@@ -5,8 +5,8 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
-import {Button} from '@/components/ui/button'
+} from './ui/dropdown-menu'
+import {Button} from './ui/button'
 import {MoonIcon, SunIcon} from '@radix-ui/react-icons'
 
 export function ThemeSwap() {

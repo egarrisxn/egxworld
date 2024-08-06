@@ -1,5 +1,5 @@
-import {TooltipProvider, Tooltip, TooltipTrigger, TooltipContent} from '@/components/ui/tooltip'
-import {SOCIALS} from '@/lib/socialIcons'
+import {TooltipProvider, Tooltip, TooltipTrigger, TooltipContent} from './ui/tooltip'
+import {socialIcons} from '@/lib/icons'
 
 export const Icon = ({name, href, label, className, children}) => {
   const defaultClassName =
@@ -18,7 +18,7 @@ export const Icon = ({name, href, label, className, children}) => {
               viewBox='0 0 24 24'
               className={iconClassName}
             >
-              {children || SOCIALS[name]}
+              {children || socialIcons[name]}
             </svg>
           </a>
         </TooltipTrigger>

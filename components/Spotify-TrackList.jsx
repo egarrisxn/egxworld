@@ -2,26 +2,28 @@
 import {useEffect, useState} from 'react'
 import {getTopTracksList} from '@/lib/spotify'
 
-export function Track({ranking, songUrl, title, artist}) {
+const Track = ({ranking, songUrl, title, artist}) => {
   return (
     <div className='mt-3 flex flex-row items-baseline border-b-2 border-foreground/30'>
-      <p className='text-sm font-bold text-yellow-500 dark:text-yellow-300'>{ranking}</p>
-      <div className='flex flex-col pl-2'>
+      <p className='text-xs text-yellow-500 lg:text-sm 2xl:text-base dark:text-yellow-300'>
+        {ranking}
+      </p>
+      <div className='flex flex-col pl-2 text-sm lg:text-base 2xl:text-2xl'>
         <a
-          className='w-60 truncate font-medium text-zinc-900 sm:w-96 dark:text-zinc-100'
+          className='w-60 truncate font-medium text-zinc-900 sm:w-96 2xl:w-[30rem] dark:text-zinc-100'
           href={songUrl}
           target='_blank'
           rel='noopener noreferrer'
         >
           {title}
         </a>
-        <p className='mb-2 w-60 truncate text-zinc-500 sm:w-96'>{artist}</p>
+        <p className='mb-2 w-60 truncate text-zinc-500 sm:w-96 2xl:w-[30rem]'>{artist}</p>
       </div>
     </div>
   )
 }
 
-export function TopTracks({client_id, client_secret, refresh_token}) {
+export function TrackList({client_id, client_secret, refresh_token}) {
   const [loading, setLoading] = useState(true)
   const [tracks, setTracks] = useState([])
 
@@ -47,7 +49,7 @@ export function TopTracks({client_id, client_secret, refresh_token}) {
       ) : (
         <section>
           <div className='border-b-2 border-foreground'>
-            <h3 className='mb-1 font-bold'>Top tracks for the week.</h3>
+            <h3 className='mb-2 font-bold'>Top tracks for the week.</h3>
           </div>
 
           <div>

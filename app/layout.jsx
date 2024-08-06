@@ -1,11 +1,16 @@
 import './globals.css'
-import {GeistSans} from 'geist/font/sans'
-import {GeistMono} from 'geist/font/mono'
-import {ThemeProvider} from '@/components/ThemeProvider'
+import {Inter as FontSans} from 'next/font/google'
+import {cn} from '@/lib/utils'
+import {ThemeProvider} from '@/components/Theme-Provider'
 import {Navbar} from '@/components/Navbar'
 import {Footer} from '@/components/Footer'
 import {Toaster} from '@/components/ui/toaster'
 import {Analytics} from '@vercel/analytics/react'
+
+const fontSans = FontSans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+})
 
 export const metadata = {
   metadataBase: new URL('https://www.egxworld.net/'),
@@ -46,15 +51,16 @@ export const metadata = {
 
 export default function RootLayout({children}) {
   return (
-    <html
-      lang='en'
-      suppressHydrationWarning
-      className={`${GeistSans.variable} ${GeistMono.variable} scroll-smooth antialiased`}
-    >
-      <body className='grid min-h-[100dvh] grid-rows-[auto_1fr_auto] bg-background font-mono text-foreground'>
+    <html lang='en' suppressHydrationWarning>
+      <body
+        className={cn(
+          'grid min-h-[100dvh] grid-rows-[auto_1fr_auto] bg-background font-sans text-foreground antialiased',
+          fontSans.variable,
+        )}
+      >
         <ThemeProvider>
           <Navbar />
-          <main>{children}</main>
+          {children}
           <Footer />
           <Toaster />
         </ThemeProvider>

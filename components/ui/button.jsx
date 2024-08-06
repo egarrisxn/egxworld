@@ -4,26 +4,26 @@ import {cva} from 'class-variance-authority'
 import {cn} from '@/lib/utils'
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors duration-150 ease-in-out focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm lg:text-base 2xl:text-xl font-medium transition-colors duration-150 ease-in-out focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
-        default: 'bg-primary text-primary-foreground shadow-md hover:bg-primary/90',
-        destructive: 'bg-destructive text-destructive-foreground shadow-md hover:bg-destructive/90',
-        outline:
-          'border shadow-md hover:bg-accent dark:shadow-foreground/20 hover:text-accent-foreground',
+        default: 'bg-primary text-primary-foreground hover:bg-primary/90',
+        destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90',
+        // outline:
+        //   'border shadow-md hover:bg-accent dark:shadow-foreground/20 hover:text-accent-foreground',
+        outline: 'border border-input bg-background hover:bg-accent hover:text-accent-foreground',
         secondary:
-          'bg-secondary border border-foreground text-secondary-foreground 2xl:text-2xl shadow-[2px_4px_6px_0px_#01091c] hover:bg-white dark:hover:bg-foreground/20 hover:font-bold lg:border-2 dark:border-0',
+          'bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-foreground shadow-[2px_4px_6px_0px_#01091c] lg:border-2',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
         link: 'no-underline',
         none: 'hover:text-accent-foreground',
       },
       size: {
-        default: 'h-9 px-8 py-2',
-        xs: 'py-1 px-7 text-xs md:text-sm lg:text-base xl:text-lg',
-        sm: 'py-1.5 px-8 text-sm xl:text-lg',
-        lg: 'h-10 px-8',
-        icon: 'size-9',
+        default: 'h-10 px-4 py-2',
+        sm: 'h-7 sm:h-8 px-6 sm:px-8 lg:h-9 lg:px-10 2xl:px-12 2xl:h-10',
+        lg: 'h-11 px-8',
+        icon: 'size-10',
       },
     },
     defaultVariants: {

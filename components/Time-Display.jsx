@@ -28,7 +28,7 @@ export function TimeOfDay() {
       className='flex flex-row items-end gap-2 text-sm text-inherit lg:flex-col lg:gap-0 lg:text-lg'
       aria-label='Time of day'
     >
-      <span className='font-semibold tracking-[-0.10em] lg:text-base'>Orlando, FL, USA</span>
+      <span className='font-semibold tracking-tighter lg:text-base'>Orlando, FL, USA</span>
       <TimeDisplay />
     </div>
   )
