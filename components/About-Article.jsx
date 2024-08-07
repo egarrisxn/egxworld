@@ -1,5 +1,5 @@
-import {TechList} from './Icon-List'
-import {GitHubDisplay} from './GitHub-Display'
+import {TechList} from './icon-list'
+import {GitHubDisplay} from './github-display'
 
 export function AboutArticle() {
   return (

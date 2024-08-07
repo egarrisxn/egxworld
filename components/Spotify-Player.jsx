@@ -1,26 +1,26 @@
 'use client'
 import {useEffect, useState} from 'react'
-import {getNowPlayingItem} from '@/lib/spotify'
+import {getNowPlayingItem} from '@/lib/spotify/dataHandler'
 import Image from 'next/image'
 
-export function SpotifyPlayer({client_id, client_secret, refresh_token}) {
+export default function SpotifyPlayer() {
   const [loading, setLoading] = useState(true)
   const [result, setResult] = useState({})
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const nowPlayingItem = await getNowPlayingItem(client_id, client_secret, refresh_token)
+        const nowPlayingItem = await getNowPlayingItem()
         setResult(nowPlayingItem)
-        setLoading(false)
       } catch (error) {
         console.error('Error fetching now playing item:', error)
+      } finally {
         setLoading(false)
       }
     }
 
     fetchData()
-  }, [client_id, client_secret, refresh_token])
+  }, [])
 
   return (
     <div>
@@ -45,7 +45,7 @@ export function SpotifyPlayer({client_id, client_secret, refresh_token}) {
             </h3>
           </div>
           {result.isPlaying && (
-            <a href={result.songUrl} target='_blank'>
+            <a href={result.songUrl} target='_blank' rel='noopener noreferrer'>
               <div className='group flex items-center gap-1 lg:flex-col lg:gap-0'>
                 <Image
                   alt={`${result.title} album art`}

@@ -1,6 +1,6 @@
 'use client'
 import {useEffect, useState} from 'react'
-import {getTopTracksList} from '@/lib/spotify'
+import {getTopTracksList} from '@/lib/spotify/dataHandler'
 
 const Track = ({ranking, songUrl, title, artist}) => {
   return (
@@ -23,24 +23,24 @@ const Track = ({ranking, songUrl, title, artist}) => {
   )
 }
 
-export function TrackList({client_id, client_secret, refresh_token}) {
+export default function TrackList() {
   const [loading, setLoading] = useState(true)
   const [tracks, setTracks] = useState([])
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const {tracks} = await getTopTracksList(client_id, client_secret, refresh_token)
+        const {tracks} = await getTopTracksList()
         setTracks(tracks)
-        setLoading(false)
       } catch (error) {
         console.error('Error fetching top tracks:', error)
+      } finally {
         setLoading(false)
       }
     }
 
     fetchData()
-  }, [client_id, client_secret, refresh_token])
+  }, [])
 
   return (
     <div>

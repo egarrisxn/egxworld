@@ -1,5 +1,5 @@
 import {Popover, PopoverContent, PopoverTrigger} from './ui/popover'
-import {TrackList} from './Spotify-TrackList'
+import TrackList from './spotify-tracklist'
 
 export function SpotifyPopover() {
   return (

@@ -2,7 +2,7 @@
 import {useForm} from 'react-hook-form'
 import {zodResolver} from '@hookform/resolvers/zod'
 import {z} from 'zod'
-import {sendEmail} from '@/lib/email'
+import {sendEmail} from '@/lib/nodemailer/sendEmail'
 import {Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter} from './ui/card'
 import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage} from './ui/form'
 import {Input} from './ui/input'

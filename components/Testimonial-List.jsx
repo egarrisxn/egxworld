@@ -1,10 +1,10 @@
-import {testimonials} from '@/lib/testimonials'
-import {TestimonialCard} from './Testimonial-Card'
+import {clientTestimonials} from '@/lib/data/testimonials'
+import {TestimonialCard} from './testimonial-card'
 
 export function TestimonialList() {
   return (
     <div className='grid grid-cols-1 gap-4'>
-      {testimonials.map((testimonial, index) => (
+      {clientTestimonials.map((testimonial, index) => (
         <TestimonialCard key={index} testimonial={testimonial} />
       ))}
     </div>

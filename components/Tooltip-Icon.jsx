@@ -1,5 +1,5 @@
 import {TooltipProvider, Tooltip, TooltipTrigger, TooltipContent} from './ui/tooltip'
-import {socialIcons} from '@/lib/icons'
+import {socialIcons} from '@/lib/data/icons'
 
 export const Icon = ({name, href, label, className, children}) => {
   const defaultClassName =
