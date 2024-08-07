@@ -1,4 +1,4 @@
-import {SocialsList} from './icon-list'
+import {SocialsList} from './IconList'
 
 export function Footer() {
   return (

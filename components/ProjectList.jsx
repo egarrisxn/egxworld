@@ -1,5 +1,5 @@
 import {currentProjects, depricatedProjects} from '@/lib/data/projects'
-import {ProjectCard} from './project-card'
+import {ProjectCard} from './ProjectCard'
 
 export function ProjectList() {
   return (

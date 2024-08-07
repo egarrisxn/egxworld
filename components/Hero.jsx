@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import {Button} from './ui/button'
-import {HeroName} from './animated-name'
-import {AvailableBadge} from './available-badge'
-import SpotifyPlayer from './spotify-player'
-import {SpotifyPopover} from './spotify-popover'
-import {SocialsList} from './icon-list'
-import {TimeOfDay} from './time-display'
+import {HeroName} from './AnimatedName'
+import {AvailableBadge} from './AvailableBadge'
+import {SpotifyPlayer} from './SpotifyPlayer'
+import {SpotifyPopover} from './SpotifyPopover'
+import {SocialsList} from './IconList'
+import {TimeOfDay} from './TimeDisplay'
 
 export function Hero() {
   return (

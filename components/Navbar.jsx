@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import {NavItem} from './navbar-item'
-import {ThemeSwap} from './theme-swap'
+import {NavItem} from './NavbarItem'
+import {ThemeSwap} from './ThemeSwap'
 
 export function Navbar() {
   return (

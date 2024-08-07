@@ -1,5 +1,5 @@
-import {Banner} from '../components/banner'
-import {Hero} from '../components/hero'
+import {Banner} from '../components/Banner'
+import {Hero} from '../components/Hero'
 
 export default function HomePage() {
   return (

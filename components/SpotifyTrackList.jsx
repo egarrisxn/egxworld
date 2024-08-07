@@ -23,7 +23,7 @@ const Track = ({ranking, songUrl, title, artist}) => {
   )
 }
 
-export default function TrackList() {
+export function TrackList() {
   const [loading, setLoading] = useState(true)
   const [tracks, setTracks] = useState([])
 

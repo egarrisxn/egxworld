@@ -1,5 +1,5 @@
 import {clientTestimonials} from '@/lib/data/testimonials'
-import {TestimonialCard} from './testimonial-card'
+import {TestimonialCard} from './TestimonialCard'
 
 export function TestimonialList() {
   return (

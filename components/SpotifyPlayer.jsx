@@ -3,7 +3,7 @@ import {useEffect, useState} from 'react'
 import {getNowPlayingItem} from '@/lib/spotify/dataHandler'
 import Image from 'next/image'
 
-export default function SpotifyPlayer() {
+export function SpotifyPlayer() {
   const [loading, setLoading] = useState(true)
   const [result, setResult] = useState({})
 

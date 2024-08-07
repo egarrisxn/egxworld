@@ -99,7 +99,7 @@ export function ContactForm() {
           Send
         </Button>
         <p className='text-sm md:text-base'>
-          If forms aren't your thing, go ahead and email me at{' '}
+          If forms aren&apos;t your thing, go ahead and email me at{' '}
           <a
             href='mailto:egarrisxn@gmail.com'
             className='text-slate-400 underline underline-offset-4 hover:text-slate-600'
