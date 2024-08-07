@@ -1,6 +1,6 @@
-import {Banner} from '@/components/banner'
-import {Header} from '@/components/header'
-import {ProjectList} from '@/components/project-list'
+import {Banner} from '../../components/banner'
+import {Header} from '../../components/header'
+import {ProjectList} from '../../components/project-list'
 
 const projectsIcons = [
   {

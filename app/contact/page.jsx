@@ -1,7 +1,7 @@
-import {Banner} from '@/components/banner'
-import {Header} from '@/components/header'
-import {ContactForm} from '@/components/contact-form'
-import {TestimonialList} from '@/components/testimonial-list'
+import {Banner} from '../../components/banner'
+import {Header} from '../../components/header'
+import {ContactForm} from '../../components/contact-form'
+import {TestimonialList} from '../../components/testimonial-list'
 
 const contactIcons = [
   {

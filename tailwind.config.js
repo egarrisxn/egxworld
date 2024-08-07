@@ -1,6 +1,5 @@
 const {fontFamily} = require('tailwindcss/defaultTheme')
 
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['selector'],
   content: ['./components/**/*.{js,jsx}', './app/**/*.{js,jsx}'],

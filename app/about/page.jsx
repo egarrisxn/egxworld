@@ -1,6 +1,6 @@
-import {Banner} from '@/components/banner'
-import {Header} from '@/components/header'
-import {AboutArticle} from '@/components/about-article'
+import {Banner} from '../../components/banner'
+import {Header} from '../../components/header'
+import {AboutArticle} from '../../components/about-article'
 
 const aboutIcons = [
   {
