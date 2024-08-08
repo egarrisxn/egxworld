@@ -1,7 +1,8 @@
 import {Banner} from '../../components/Banner'
 import {Header} from '../../components/Header'
 import {ContactForm} from '../../components/ContactForm'
-import {TestimonialList} from '../../components/TestimonialList'
+import {TestimonialCard} from '../../components/TestimonialCard'
+import {clientTestimonials} from '@/lib/data/testimonials'
 
 const contactIcons = [
   {
@@ -37,7 +38,11 @@ export default function ContactPage() {
               <span className='font-bold text-red-500 dark:text-red-300'>Positive</span> words said
               about me:
             </p>
-            <TestimonialList />
+            <div className='grid grid-cols-1 gap-4'>
+              {clientTestimonials.map((testimonial, index) => (
+                <TestimonialCard key={index} testimonial={testimonial} />
+              ))}
+            </div>
           </section>
         </div>
       </div>

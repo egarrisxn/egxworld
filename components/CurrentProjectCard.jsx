@@ -2,7 +2,7 @@ import Image from 'next/image'
 import {Card, CardHeader, CardTitle, CardContent, CardFooter} from './ui/card'
 import {Button} from './ui/button'
 
-export function ProjectCard({project}) {
+export function CurrentProjectCard({project}) {
   return (
     <Card className='flex flex-col rounded-lg border border-foreground bg-card text-center shadow-[2px_4px_6px_0px_#01091c] dark:border-border dark:shadow-sm'>
       <CardHeader className='mx-auto flex'>
