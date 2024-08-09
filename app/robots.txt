@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 Disallow: /private/
-Sitemap: https://egxworld.net/sitemap.xml
+Sitemap: https://egxworld.vercel.app/sitemap.xml

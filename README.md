@@ -1,4 +1,4 @@
-# egxworld
+# egxworld-v1
 
 My personal website / portfolio / whatever you'd like to call it.
 
@@ -14,7 +14,7 @@ This site showcases my skills, projects, provides a glimpse into my professional
 
 - **JavaScript:** The primary programming language used for the project.
 - **Next.js 14:** Leveraging the latest features and improvements in the Next.js framework.
-- **TailwindCSS:** A utility-first CSS framework for rapid UI development.
+- **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
 - **Shadcn/UI:** A beautiful component library built ontop of Radix UI.
 
 ## Installation

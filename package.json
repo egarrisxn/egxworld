@@ -1,8 +1,8 @@
 {
-  "name": "egxworld",
+  "name": "egxworld-v1",
   "version": "1.0.0",
   "description": "My personal website.",
-  "homepage": "https://egxworld.net",
+  "homepage": "https://egxworld.vercel.app",
   "author": "Ethan G.",
   "license": "MIT",
   "private": true,

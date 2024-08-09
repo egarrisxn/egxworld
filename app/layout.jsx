@@ -13,8 +13,8 @@ const fontSans = FontSans({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://www.egxworld.net/'),
-  title: 'EG | World',
+  metadataBase: new URL('https://www.egxworld.vercel.app/'),
+  title: 'EG|World V1',
   description: 'Full Stack Developer. Digital Product Designer.',
   referrer: 'origin-when-cross-origin',
   keywords: [
@@ -34,17 +34,17 @@ export const metadata = {
   },
   openGraph: {
     type: 'website',
-    siteName: 'egxworld.net',
-    title: 'EG | World',
+    siteName: 'egxworld.vercel.app',
+    title: 'EG|World V1',
     description: 'Full Stack Developer. Digital Product Designer.',
-    url: 'https://www.egxworld.net/',
+    url: 'https://www.egxworld.vercel.app/',
     locale: 'en_US',
   },
   twitter: {
     cardType: 'summary_large_image',
     handle: '@eg_xo_',
     site: '@eg_xo_',
-    title: 'EG | World',
+    title: 'EG|World V1',
     description: 'Full Stack Developer. Digital Product Designer.',
   },
 }

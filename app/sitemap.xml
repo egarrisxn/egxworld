@@ -1,24 +1,24 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
   <url>
-    <loc>https://egxworld.net</loc>
+    <loc>https://egxworld.vercel.app</loc>
     <lastmod>2024-07-30T15:02:24.021Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>1</priority>
   </url>
     <url>
-    <loc>https://egxworld.net/about</loc>
+    <loc>https://egxworld.vercel.app/about</loc>
     <lastmod>2024-07-30T15:02:24.021Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
     <url>
-    <loc>https://egxworld.net/projects</loc>
+    <loc>https://egxworld.vercel.app/projects</loc>
     <lastmod>2024-07-30T15:02:24.021Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
     <url>
-    <loc>https://egxworld.net/contact</loc>
+    <loc>https://egxworld.vercel.app/contact</loc>
     <lastmod>2024-07-30T15:02:24.021Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
