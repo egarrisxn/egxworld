@@ -8,7 +8,7 @@ My personal website / portfolio / whatever you'd like to call it.
 
 This site showcases my skills, projects, provides a glimpse into my professional journey, and so much more.
 
-![egxworld](https://github.com/egarrisxn/egxworld/assets/126130230/c5c1d86f-0f19-4fbc-8af7-d0c363f51ce3)
+![egxworldv1v1](https://github.com/user-attachments/assets/e78e3627-2882-41c0-a70b-d8c6850c8402)
 
 ## Technologies
 
