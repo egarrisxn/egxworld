@@ -7,7 +7,7 @@ export function PastProjectCard({project}) {
         <p className='mb-0.5 line-clamp-1 text-center text-sm font-medium leading-tight tracking-tight md:text-base xl:text-lg 2xl:text-xl'>
           {project.title}
         </p>
-        <div className='relative rounded-lg border border-foreground bg-card shadow-[2px_4px_6px_0px_#01091c] dark:border-border dark:shadow-sm'>
+        <div className='relative rounded-lg border border-foreground bg-card shadow-[1px_3px_5px_0px_#01091c] dark:border-border dark:shadow-sm'>
           <Image
             src={project.image}
             alt={project.alt}

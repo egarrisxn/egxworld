@@ -42,7 +42,7 @@ export function ContactForm() {
   }
 
   return (
-    <Card className='flex flex-col sm:rounded-lg sm:border sm:border-foreground sm:bg-card sm:shadow-[2px_4px_6px_0px_#01091c] dark:shadow-sm sm:dark:border-border'>
+    <Card className='flex flex-col sm:rounded-lg sm:border sm:border-foreground sm:bg-card sm:shadow-[1px_3px_4px_0px_#01091c] dark:shadow-sm sm:dark:border-border'>
       <CardHeader>
         <CardTitle className='text-2xl'>Have any questions?</CardTitle>
         <CardDescription className='pb-4 sm:pb-0'>

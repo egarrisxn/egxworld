@@ -14,14 +14,14 @@ export default function HomePage() {
       <Banner title='welcome' />
       <div className='mx-auto mt-12 flex w-full max-w-5xl px-4 sm:mt-16 sm:px-8 xl:max-w-6xl 2xl:mt-24 2xl:max-w-7xl'>
         <div className='mx-auto grid grid-cols-1 lg:mx-16 lg:grid-cols-2 xl:mx-auto'>
-          <article className='space-y-2 lg:space-y-5'>
+          <article className='space-y-2 md:space-y-3 lg:space-y-5'>
             <Image
               src='/other/hero-image.png'
               width={200}
               height={200}
               priority
               alt='My Photo'
-              className='max-h-20 max-w-20 -rotate-12 rounded-full border border-foreground shadow-[2px_4px_6px_0px_#01091c] lg:max-h-36 lg:max-w-36 lg:border-2 2xl:max-h-full 2xl:max-w-full dark:border-slate-500'
+              className='max-h-20 max-w-20 -rotate-12 rounded-full border border-foreground shadow-[1px_3px_4px_0px_#01091c] md:max-h-28 md:max-w-28 lg:max-h-36 lg:max-w-36 lg:border-2 2xl:max-h-full 2xl:max-w-full dark:border-slate-500'
             />
 
             <section className='flex flex-col gap-1 lg:gap-1.5 2xl:gap-3'>
