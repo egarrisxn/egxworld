@@ -1,6 +1,6 @@
 import {Icon} from './TooltipIcon'
 
-export function SocialsList() {
+export const SocialsList = () => {
   return (
     <>
       <Icon href='https://github.com/egarrisxn' label='GitHub' className='hover:text-green-400'>
@@ -92,7 +92,7 @@ export function SocialsList() {
   )
 }
 
-export function TechList() {
+export const TechList = () => {
   return (
     <>
       <Icon href='https://alpinejs.dev/' label='Alpine.js'>

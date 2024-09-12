@@ -35,8 +35,8 @@ export default function ContactPage() {
           </section>
           <section className='mt-4 flex flex-col gap-5 border-t border-red-500 pt-4 lg:mt-0 lg:w-1/3 lg:justify-center lg:gap-2 lg:border-none lg:pt-0 dark:border-red-300'>
             <p className='2xl: font-semibold sm:text-base lg:pl-2 xl:text-xl 2xl:text-3xl 2xl:tracking-tighter'>
-              <span className='font-bold text-red-500 dark:text-red-300'>Positive</span> words said
-              about me:
+              <span className='font-bold text-red-500 dark:text-red-300'>Positive</span> words
+              spoken about me:
             </p>
             <div className='grid grid-cols-1 gap-4'>
               {clientTestimonials.map((testimonial, index) => (

@@ -21,7 +21,7 @@ export default function HomePage() {
               width={200}
               height={200}
               priority
-              alt='My Photo'
+              alt='A small photo of myself'
               className='max-h-20 max-w-20 -rotate-12 rounded-full border border-foreground shadow-[1px_3px_4px_0px_#01091c] md:max-h-28 md:max-w-28 lg:max-h-36 lg:max-w-36 lg:border-2 2xl:max-h-full 2xl:max-w-full dark:border-slate-500'
             />
 
@@ -53,15 +53,18 @@ export default function HomePage() {
               <section className='order-3 flex flex-col gap-3 pb-4 pt-4 lg:order-1 lg:gap-4 2xl:gap-5'>
                 <Button
                   asChild
-                  variant='secondary'
+                  variant='main'
                   size='sm'
+                  aria-label='Learn more about me'
                   className='max-w-72 hover:text-yellow-500 md:max-w-xs lg:max-w-sm dark:hover:text-yellow-300'
                 >
                   <Link href='/about'>Learn More</Link>
                 </Button>
                 <Button
-                  variant='secondary'
+                  asChild
+                  variant='main'
                   size='sm'
+                  arial-label='Link to my new blog'
                   className='max-w-72 bg-yellow-500 text-background hover:bg-yellow-400 hover:text-black md:max-w-xs lg:max-w-sm dark:bg-yellow-300 dark:hover:bg-yellow-400 dark:hover:text-white'
                 >
                   <a href='https://www.egxblog.net/' target='_blank' rel='noopener noreferrer'>

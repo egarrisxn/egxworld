@@ -25,9 +25,9 @@ export function SpotifyPlayer() {
   return (
     <>
       {loading ? (
-        <section className='flex-grow font-semibold tracking-tighter lg:text-base xl:text-lg 2xl:text-2xl'>
+        <h3 className='flex-grow font-semibold tracking-tighter lg:text-base xl:text-lg 2xl:text-2xl'>
           Loading..
-        </section>
+        </h3>
       ) : (
         <section className='flex max-w-72 items-center gap-1 sm:max-w-96 lg:flex-col lg:gap-0.5'>
           <div className='flex flex-row items-center gap-0.5'>

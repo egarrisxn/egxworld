@@ -4,24 +4,23 @@ import {cva} from 'class-variance-authority'
 import {cn} from '@/lib/utils'
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-lg  lg:text-base 2xl:text-xl font-semibold transition-colors duration-150 ease-in-out focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center justify-center whitespace-nowrap transition-colors duration-150 ease-in-out focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
-        default: 'bg-primary text-primary-foreground hover:bg-primary/90',
-        destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90',
-        outline: 'border border-input bg-background hover:bg-accent hover:text-accent-foreground',
-        secondary:
-          'bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-foreground shadow-[1px_2px_3px_0px_#01091c] lg:border-2',
+        default: 'bg-primary text-primary-foreground rounded-lg hover:bg-primary/90',
+        main: 'bg-secondary rounded-lg text-secondary-foreground hover:bg-secondary/80 border border-foreground shadow-[1px_2px_3px_0px_#01091c] lg:border-2',
+        badge:
+          'rounded-full border border-foreground bg-gradient-to-r from-[#5ebe8d] via-[#66c527] to-[#09860b] shadow-[2px_4px_6px_0px_#01091c] lg:border-2 dark:border-0',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
         link: 'no-underline',
         none: 'hover:text-accent-foreground',
       },
       size: {
-        default: 'h-10 px-4 py-2',
-        sm: 'h-7 sm:h-8 px-6 sm:px-7 lg:h-9 lg:px-10 2xl:px-12 2xl:h-10',
-        lg: 'h-11 px-8',
-        icon: 'size-10',
+        default: 'h-10 px-4 py-2 w-full',
+        sm: 'h-7 sm:h-8 px-6 font-semibold 2xl:text-xl sm:px-7 lg:h-9 lg:px-10 2xl:px-12 2xl:h-10',
+        badge: 'h-8 p-2 w-fit 2xl:h-12 2xl:p-3 ',
+        icon: 'size-10 font-semibold 2xl:text-xl',
       },
     },
     defaultVariants: {

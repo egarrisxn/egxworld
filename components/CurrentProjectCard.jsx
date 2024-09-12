@@ -8,14 +8,20 @@ export function CurrentProjectCard({project}) {
       <CardHeader className='mx-auto flex'>
         <Image
           src={project.image}
-          alt={project.alt}
+          alt={`Photo of the ${project.alt} project`}
           width={760}
           height={430}
+          priority={false}
           className='rounded-t-md'
         />
       </CardHeader>
-      <CardTitle className='text-blue-500 transition-all duration-150 ease-in-out hover:text-blue-400 hover:underline hover:underline-offset-4 md:text-lg xl:text-2xl 2xl:text-3xl dark:text-blue-400 dark:hover:text-blue-600'>
-        <a href={project.websiteLink} target='_blank' rel='noopener noreferrer'>
+      <CardTitle className='text-blue-500 transition-all duration-150 ease-in-out hover:text-blue-400 hover:underline hover:underline-offset-4 focus:text-blue-600 md:text-lg xl:text-2xl 2xl:text-3xl dark:text-blue-400 dark:hover:text-blue-600 dark:focus:text-blue-500'>
+        <a
+          href={project.websiteLink}
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label={`Visit ${project.title} website`}
+        >
           {project.title}
         </a>
       </CardTitle>
@@ -25,12 +31,24 @@ export function CurrentProjectCard({project}) {
         </p>
       </CardContent>
       <CardFooter className='flex flex-row items-center justify-center gap-4 pb-4 lg:gap-6 2xl:gap-8 2xl:pb-6'>
-        <Button variant='secondary' size='sm' className='hover:border-blue-400 hover:text-blue-400'>
+        <Button
+          asChild
+          variant='main'
+          size='sm'
+          aria-label={`Link to the ${project.title} page`}
+          className='hover:border-blue-400 hover:text-blue-400'
+        >
           <a href={project.websiteLink} target='_blank' rel='noopener noreferrer'>
             Link
           </a>
         </Button>
-        <Button variant='secondary' size='sm' className='hover:border-blue-400 hover:text-blue-400'>
+        <Button
+          asChild
+          variant='main'
+          size='sm'
+          aria-label={`Link to the ${project.title} GitHub repository`}
+          className='hover:border-blue-400 hover:text-blue-400'
+        >
           <a href={project.repositoryLink} target='_blank' rel='noopener noreferrer'>
             Repo
           </a>

@@ -38,9 +38,9 @@ export default function ProjectsPage() {
           </div>
         </section>
 
-        <p className='font-bold uppercase tracking-tight text-blue-400 md:px-2 md:text-lg lg:text-2xl xl:mt-2 2xl:mb-2 2xl:mt-8 2xl:text-4xl dark:text-blue-300'>
+        <h2 className='font-bold uppercase tracking-tight text-blue-400 md:px-2 md:text-lg lg:text-2xl xl:mt-2 2xl:mb-2 2xl:mt-8 2xl:text-4xl dark:text-blue-300'>
           The Past.
-        </p>
+        </h2>
 
         <section className='mx-auto flex flex-col pt-4 shadow-foreground drop-shadow-2xl md:mx-12 lg:mx-16 xl:mx-auto'>
           <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4'>

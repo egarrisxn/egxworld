@@ -29,11 +29,11 @@ export default function AboutPage() {
           icons={aboutIcons}
         />
         <article className='mx-auto grid grid-cols-1 justify-center pt-4 md:mx-12 lg:mx-16 xl:mx-auto'>
-          <h2 className='text-2xl font-bold leading-7 shadow-foreground drop-shadow-2xl md:text-3xl lg:text-4xl lg:leading-10 lg:tracking-wide xl:text-5xl 2xl:text-6xl'>
+          <h3 className='text-2xl font-bold leading-7 shadow-foreground drop-shadow-2xl md:text-3xl lg:text-4xl lg:leading-10 lg:tracking-wide xl:text-5xl 2xl:text-6xl'>
             Hello, World! I&apos;m <span className='text-green-400 dark:text-green-300'>Ethan</span>
             , a passionate Full Stack Developer & Digital Product Designer based in Orlando,
             Florida, USA.
-          </h2>
+          </h3>
 
           <section className='mt-5 flex flex-col gap-5 lg:mt-8 lg:text-lg xl:text-xl 2xl:text-3xl'>
             <p>

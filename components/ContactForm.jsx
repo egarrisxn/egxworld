@@ -91,14 +91,14 @@ export function ContactForm() {
                 </FormItem>
               )}
             />
+            <Button type='submit' disabled={formState.isSubmitting}>
+              Send
+            </Button>
           </form>
         </Form>
       </CardContent>
       <CardFooter className='flex w-full flex-col gap-4 pt-2 text-center md:gap-6'>
-        <Button type='submit' disabled={formState.isSubmitting}>
-          Send
-        </Button>
-        <p className='md:text-base'>
+        <p>
           If forms aren&apos;t your thing, go ahead and email me at{' '}
           <a
             href='mailto:egarrisxn@gmail.com'

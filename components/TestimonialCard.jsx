@@ -13,13 +13,12 @@ export function TestimonialCard({testimonial}) {
             alt={testimonial.alt}
             width={48}
             height={48}
-            className='rounded-full'
-            style={{aspectRatio: '48/48', objectFit: 'cover'}}
+            className='aspect-square rounded-full object-cover'
           />
         </div>
         <div>
-          <div className='text-base font-semibold'>{testimonial.client}</div>
-          <div className='text-muted-foreground'>{testimonial.position}</div>
+          <p className='text-base font-semibold'>{testimonial.client}</p>
+          <p className='text-muted-foreground'>{testimonial.position}</p>
         </div>
       </div>
     </div>
