@@ -38,7 +38,7 @@ export default function ProjectsPage() {
           </div>
         </section>
 
-        <p className='text-sm font-extrabold uppercase tracking-tight text-blue-400 md:px-2 md:text-lg lg:text-2xl xl:mt-2 2xl:mb-2 2xl:mt-8 2xl:text-4xl dark:text-blue-300'>
+        <p className='font-bold uppercase tracking-tight text-blue-400 md:px-2 md:text-lg lg:text-2xl xl:mt-2 2xl:mb-2 2xl:mt-8 2xl:text-4xl dark:text-blue-300'>
           The Past.
         </p>
 

@@ -1,0 +1,22 @@
+export function WorkBadge() {
+  return (
+    <>
+      <div className='ml-0.5 py-1 lg:ml-1'>
+        <a
+          href='https://www.linkedin.com/in/ethan-garrison/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <button className='group flex h-8 items-center justify-center gap-3 rounded-full border border-foreground bg-gradient-to-r from-[#5ebe8d] via-[#66c527] to-[#09860b] p-2 shadow-[2px_4px_6px_0px_#01091c] lg:border-2 2xl:h-12 2xl:px-3 dark:border-0'>
+            <div className='flex size-5 rounded-full bg-green-700 2xl:size-6'>
+              <div className='m-auto size-3 animate-ping rounded-full bg-green-600 2xl:size-4'></div>
+            </div>
+            <span className='font-bold leading-snug tracking-tight text-green-900 transition-colors duration-150 ease-in-out group-hover:text-black 2xl:text-base'>
+              Available for work!
+            </span>
+          </button>
+        </a>
+      </div>
+    </>
+  )
+}

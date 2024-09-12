@@ -19,13 +19,11 @@ export function CurrentProjectCard({project}) {
           {project.title}
         </a>
       </CardTitle>
-
       <CardContent className='flex flex-grow'>
-        <p className='my-1 line-clamp-4 text-sm leading-tight tracking-tighter text-muted-foreground md:mb-0 lg:mb-1 lg:text-base lg:leading-snug xl:mt-3 xl:text-lg 2xl:text-2xl 2xl:leading-normal 2xl:tracking-normal'>
+        <p className='my-1 line-clamp-4 leading-tight tracking-tighter text-muted-foreground md:mb-0 lg:mb-1 lg:text-base lg:leading-snug xl:mt-3 xl:text-lg 2xl:text-2xl 2xl:leading-normal 2xl:tracking-normal'>
           {project.description}
         </p>
       </CardContent>
-
       <CardFooter className='flex flex-row items-center justify-center gap-4 pb-4 lg:gap-6 2xl:gap-8 2xl:pb-6'>
         <Button variant='secondary' size='sm' className='hover:border-blue-400 hover:text-blue-400'>
           <a href={project.websiteLink} target='_blank' rel='noopener noreferrer'>

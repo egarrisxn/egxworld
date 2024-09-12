@@ -22,10 +22,10 @@ export function ThemeSwap() {
             <span className='sr-only'>Toggle theme</span>
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent align='end'>
-          <DropdownMenuItem onClick={() => setTheme('light')}>light</DropdownMenuItem>
-          <DropdownMenuItem onClick={() => setTheme('dark')}>dark</DropdownMenuItem>
-          <DropdownMenuItem onClick={() => setTheme('system')}>system</DropdownMenuItem>
+        <DropdownMenuContent>
+          <DropdownMenuItem onClick={() => setTheme('light')}>LIGHT</DropdownMenuItem>
+          <DropdownMenuItem onClick={() => setTheme('dark')}>DARK</DropdownMenuItem>
+          <DropdownMenuItem onClick={() => setTheme('system')}>SYSTEM</DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </>

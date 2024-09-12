@@ -4,7 +4,7 @@ export function PastProjectCard({project}) {
   return (
     <>
       <a href={project.repositoryLink} target='_blank' rel='noopener noreferrer'>
-        <p className='mb-0.5 line-clamp-1 text-center text-sm font-medium leading-tight tracking-tight md:text-base xl:text-lg 2xl:text-xl'>
+        <p className='mb-0.5 line-clamp-1 text-center font-semibold leading-tight tracking-tight md:text-base xl:text-lg 2xl:text-xl'>
           {project.title}
         </p>
         <div className='relative rounded-lg border border-foreground bg-card shadow-[1px_3px_5px_0px_#01091c] dark:border-border dark:shadow-sm'>

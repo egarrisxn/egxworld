@@ -11,29 +11,11 @@ const calendarConfig = {
 export function GitHubDisplay() {
   return (
     <>
-      <div className='md:hidden'>
+      <div className='xl:hidden'>
         <GitHubCalendar
           {...calendarConfig}
           blockMargin={1}
           blockRadius={1}
-          blockSize={4}
-          fontSize={8}
-        />
-      </div>
-      <div className='hidden md:block lg:hidden'>
-        <GitHubCalendar
-          {...calendarConfig}
-          blockMargin={1}
-          blockRadius={1}
-          blockSize={7}
-          fontSize={12}
-        />
-      </div>
-      <div className='hidden lg:block xl:hidden'>
-        <GitHubCalendar
-          {...calendarConfig}
-          blockMargin={2}
-          blockRadius={2}
           blockSize={9}
           fontSize={14}
         />
@@ -41,8 +23,8 @@ export function GitHubDisplay() {
       <div className='hidden xl:block'>
         <GitHubCalendar
           {...calendarConfig}
-          blockMargin={2}
-          blockRadius={2}
+          blockMargin={1}
+          blockRadius={1}
           blockSize={13}
           fontSize={16}
         />

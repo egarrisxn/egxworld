@@ -1,16 +1,10 @@
 import './globals.css'
-import {Inter as FontSans} from 'next/font/google'
 import {cn} from '@/lib/utils'
 import {ThemeProvider} from '@/components/ThemeProvider'
 import {Navbar} from '@/components/Navbar'
 import {Footer} from '@/components/Footer'
 import {Toaster} from '@/components/ui/toaster'
 import {Analytics} from '@vercel/analytics/react'
-
-const fontSans = FontSans({
-  subsets: ['latin'],
-  variable: '--font-sans',
-})
 
 export const metadata = {
   metadataBase: new URL('https://www.egxworld.vercel.app/'),
@@ -54,8 +48,7 @@ export default function RootLayout({children}) {
     <html lang='en' suppressHydrationWarning>
       <body
         className={cn(
-          'grid min-h-[100dvh] grid-rows-[auto_1fr_auto] bg-background font-sans text-foreground antialiased',
-          fontSans.variable,
+          'font-neogrote grid min-h-[100dvh] grid-rows-[auto_1fr_auto] bg-background text-foreground antialiased',
         )}
       >
         <ThemeProvider>

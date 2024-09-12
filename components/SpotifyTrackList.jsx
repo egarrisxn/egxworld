@@ -5,12 +5,10 @@ import {getTopTracksList} from '@/lib/spotify/dataHandler'
 const Track = ({ranking, songUrl, title, artist}) => {
   return (
     <div className='mt-3 flex flex-row items-baseline border-b-2 border-foreground/30'>
-      <p className='text-xs text-yellow-500 lg:text-sm 2xl:text-base dark:text-yellow-300'>
-        {ranking}
-      </p>
-      <div className='flex flex-col pl-2 text-sm lg:text-base 2xl:text-2xl'>
+      <p className='lg: text-yellow-500 2xl:text-base dark:text-yellow-300'>{ranking}</p>
+      <div className='flex flex-col pl-2 lg:text-base 2xl:text-2xl'>
         <a
-          className='w-60 truncate font-medium text-zinc-900 sm:w-96 2xl:w-[30rem] dark:text-zinc-100'
+          className='w-60 truncate font-semibold text-zinc-900 sm:w-96 2xl:w-[30rem] dark:text-zinc-100'
           href={songUrl}
           target='_blank'
           rel='noopener noreferrer'
@@ -45,7 +43,7 @@ export function TrackList() {
   return (
     <div>
       {loading ? (
-        <section className='flex-grow text-sm font-bold sm:text-base'>Loading..</section>
+        <section className='flex-grow font-bold sm:text-base'>Loading..</section>
       ) : (
         <section>
           <div className='border-b-2 border-foreground'>

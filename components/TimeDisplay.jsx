@@ -25,7 +25,7 @@ const TimeDisplay = () => {
 export function TimeOfDay() {
   return (
     <div
-      className='flex flex-row items-end gap-2 text-sm text-inherit lg:flex-col lg:gap-0 lg:text-lg 2xl:text-2xl'
+      className='flex flex-row items-end gap-2 text-inherit lg:flex-col lg:gap-0 lg:text-lg 2xl:text-2xl'
       aria-label='Time of day'
     >
       <span className='font-semibold tracking-tighter lg:text-base 2xl:text-xl'>

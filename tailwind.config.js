@@ -1,5 +1,3 @@
-const {fontFamily} = require('tailwindcss/defaultTheme')
-
 module.exports = {
   darkMode: ['selector'],
   content: ['./components/**/*.{js,jsx}', './app/**/*.{js,jsx}'],
@@ -12,7 +10,15 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['var(--font-sans)', ...fontFamily.sans],
+        neogrote: [
+          'Inter',
+          'Roboto',
+          'Helvetica Neue',
+          'Arial Nova',
+          'Nimbus Sans',
+          'Arial',
+          'sans-serif',
+        ],
       },
       colors: {
         border: 'hsl(var(--border))',

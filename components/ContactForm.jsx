@@ -98,7 +98,7 @@ export function ContactForm() {
         <Button type='submit' disabled={formState.isSubmitting}>
           Send
         </Button>
-        <p className='text-sm md:text-base'>
+        <p className='md:text-base'>
           If forms aren&apos;t your thing, go ahead and email me at{' '}
           <a
             href='mailto:egarrisxn@gmail.com'
