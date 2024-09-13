@@ -91,7 +91,11 @@ export function ContactForm() {
                 </FormItem>
               )}
             />
-            <Button type='submit' disabled={formState.isSubmitting}>
+            <Button
+              type='submit'
+              className='bg-primary text-primary-foreground hover:bg-primary/90'
+              disabled={formState.isSubmitting}
+            >
               Send
             </Button>
           </form>

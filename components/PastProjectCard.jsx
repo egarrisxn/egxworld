@@ -17,7 +17,6 @@ export function PastProjectCard({project}) {
             alt={`Photo of the ${project.alt} project`}
             width={760}
             height={430}
-            priority={false}
             className='rounded-lg border-2'
           />
           <div className='absolute inset-0 rounded-lg bg-black opacity-0 group-hover:opacity-20 group-focus:opacity-20'></div>

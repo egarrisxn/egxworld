@@ -34,7 +34,7 @@ export function CurrentProjectCard({project}) {
         <Button
           asChild
           variant='main'
-          size='sm'
+          size='md'
           aria-label={`Link to the ${project.title} page`}
           className='hover:border-blue-400 hover:text-blue-400'
         >
@@ -45,7 +45,7 @@ export function CurrentProjectCard({project}) {
         <Button
           asChild
           variant='main'
-          size='sm'
+          size='md'
           aria-label={`Link to the ${project.title} GitHub repository`}
           className='hover:border-blue-400 hover:text-blue-400'
         >

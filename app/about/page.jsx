@@ -1,6 +1,6 @@
 import {Banner} from '../../components/Banner'
 import {Header} from '../../components/Header'
-import {TechList} from '../../components/IconList'
+import {TechList} from '../../components/TechList'
 import {GitHubDisplay} from '../../components/GitHubDisplay'
 
 const aboutIcons = [
