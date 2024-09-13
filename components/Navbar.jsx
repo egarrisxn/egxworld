@@ -24,7 +24,7 @@ export function Navbar() {
         <NavItem href='/contact' label='contact'>
           CONTACT
         </NavItem>
-        <Link
+        <a
           href='https://egxblog.net'
           className='hover:text-yellow-400'
           target='_blank'
@@ -32,7 +32,7 @@ export function Navbar() {
         >
           BLOG
           <span className='sr-only'>Link to my blog</span>
-        </Link>
+        </a>
       </section>
       <section className='p-2 md:p-4 xl:py-6'>
         <ThemeSwap />

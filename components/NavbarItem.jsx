@@ -28,7 +28,7 @@ export function NavItem({href, label, children}) {
         })}
       >
         {children}
-        <span className='sr-only'>{label}</span>
+        <span className='sr-only'>Link to the {`${label} page`}</span>
       </Link>
     </>
   )

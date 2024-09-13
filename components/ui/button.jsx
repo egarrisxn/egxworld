@@ -13,13 +13,14 @@ const buttonVariants = cva(
         badge:
           'rounded-full border border-foreground bg-gradient-to-r from-[#5ebe8d] via-[#66c527] to-[#09860b] shadow-[2px_4px_6px_0px_#01091c] lg:border-2 dark:border-0',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
-        link: 'no-underline',
+        link: 'no-underline hover:underline-2',
         none: 'hover:text-accent-foreground',
       },
       size: {
         default: 'h-10 px-4 py-2 w-full',
         sm: 'h-7 sm:h-8 px-6 max-w-72 md:max-w-xs lg:max-w-sm 2xl:text-xl sm:px-7 lg:h-9 lg:px-10 2xl:px-12 2xl:h-10',
         md: 'h-7 sm:h-8 px-6 2xl:text-xl sm:px-7 lg:h-9 lg:px-10 2xl:px-12 2xl:h-10',
+        text: 'tracking-tight lg:text-lg xl:text-xl 2xl:text-2xl',
         badge: 'h-8 p-2 w-fit 2xl:h-12 2xl:p-3 ',
         icon: 'size-10 2xl:text-xl',
       },

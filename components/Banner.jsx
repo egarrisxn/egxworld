@@ -29,7 +29,6 @@ export function Banner({title}) {
       className={`${className} flex w-full justify-center border-b py-8 shadow-md shadow-muted-foreground/80`}
       role='banner'
     >
-      <h1 className='sr-only'>{alt} section</h1>
       <Image src={src} width={2560} height={200} alt={`Banner for the ${alt} page`} />
     </div>
   )

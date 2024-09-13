@@ -3,7 +3,13 @@ import {Icon} from './TooltipIcon'
 export const SocialList = () => {
   return (
     <>
-      <Icon href='https://github.com/egarrisxn' label='GitHub' className='hover:text-green-400'>
+      <Icon
+        href='https://github.com/egarrisxn'
+        name='My GitHub'
+        alt='GitHub Icon'
+        label='GitHub'
+        className='hover:text-green-400'
+      >
         <path
           fill='none'
           stroke='currentColor'
@@ -15,6 +21,8 @@ export const SocialList = () => {
       </Icon>
       <Icon
         href='https://www.linkedin.com/in/ethan-garrison'
+        name='My LinedIn'
+        alt='LinkedIn Icon'
         label='LinkedIn'
         className='hover:text-red-400'
       >
@@ -29,7 +37,13 @@ export const SocialList = () => {
           <path d='M16 16v-3a2 2 0 0 0-4 0' />
         </g>
       </Icon>
-      <Icon href='https://twitter.com/eg_xo_' label='Twitter' className='hover:text-blue-400'>
+      <Icon
+        href='https://twitter.com/eg_xo_'
+        name='My Twitter'
+        alt='Twitter Icon'
+        label='Twitter'
+        className='hover:text-blue-400'
+      >
         <path
           fill='none'
           stroke='currentColor'
@@ -41,6 +55,8 @@ export const SocialList = () => {
       </Icon>
       <Icon
         href='https://open.spotify.com/user/egarrisxn'
+        name='My Spotify'
+        alt='Spotify Icon'
         label='Spotify'
         className='hover:text-green-400'
       >
@@ -57,6 +73,8 @@ export const SocialList = () => {
       </Icon>
       <Icon
         href='https://www.instagram.com/eg___xo'
+        name='My Instagram'
+        alt='Instagram Icon'
         label='Instagram'
         className='hover:text-red-400'
       >
@@ -73,6 +91,8 @@ export const SocialList = () => {
       </Icon>
       <Icon
         href='https://discord.com/users/eg___xo'
+        name='My Discord'
+        alt='Discord Icon'
         label='Discord'
         className='hover:text-blue-400'
       >
