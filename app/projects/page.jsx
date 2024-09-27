@@ -12,9 +12,9 @@ const projectsIcons = [
     className: 'hover:text-blue-400 dark:hover:text-blue-300',
   },
   {
-    name: 'twitter',
-    href: 'https://twitter.com/eg_xo_',
-    label: 'Twitter',
+    name: 'x',
+    href: 'https://x.com/eg__xo',
+    label: 'X',
     className: 'hover:text-blue-400 dark:hover:text-blue-300',
   },
 ]

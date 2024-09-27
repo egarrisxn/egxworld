@@ -20,7 +20,7 @@ export const SocialList = () => {
         />
       </Icon>
       <Icon
-        href='https://www.linkedin.com/in/ethan-garrison'
+        href='https://linkedin.com/in/ethan-gx'
         name='My LinedIn'
         alt='LinkedIn Icon'
         label='LinkedIn'
@@ -38,10 +38,10 @@ export const SocialList = () => {
         </g>
       </Icon>
       <Icon
-        href='https://twitter.com/eg_xo_'
-        name='My Twitter'
-        alt='Twitter Icon'
-        label='Twitter'
+        href='https://x.com/eg__xo'
+        name='My X'
+        alt='X Icon'
+        label='X'
         className='hover:text-blue-400'
       >
         <path
@@ -72,7 +72,7 @@ export const SocialList = () => {
         </g>
       </Icon>
       <Icon
-        href='https://www.instagram.com/eg___xo'
+        href='https://instagram.com/eg___xo'
         name='My Instagram'
         alt='Instagram Icon'
         label='Instagram'

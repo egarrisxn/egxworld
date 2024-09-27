@@ -13,7 +13,7 @@ const contactIcons = [
   },
   {
     name: 'linkedin',
-    href: 'https://www.linkedin.com/in/ethan-garrison',
+    href: 'https://www.linkedin.com/in/ethan-gx',
     label: 'LinkedIn',
     className: 'hover:text-red-400 dark:hover:text-red-300',
   },

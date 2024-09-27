@@ -6,7 +6,7 @@ import {GitHubDisplay} from '../../components/GitHubDisplay'
 const aboutIcons = [
   {
     name: 'instagram',
-    href: 'https://www.instagram.com/eg___xo',
+    href: 'https://instagram.com/eg___xo',
     label: 'Instagram',
     className: 'hover:text-green-400 dark:hover:text-green-300',
   },
