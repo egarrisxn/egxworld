@@ -9,6 +9,19 @@ import {SpotifyPlayer} from '../components/SpotifyPlayer'
 import {WeeklyTracks} from '../components/WeeklyTracks'
 import {TimeOfDay} from '../components/TimeDisplay'
 
+// // ! Test Loader
+// import Loader from '../components/Loader'
+// function loadingPage() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve(<Loader />)
+//     }, 3000)
+//   })
+// }
+// export default async function HomePage() {
+//   const load = await loadingPage()
+//   console.log({load})
+
 export default function HomePage() {
   return (
     <main className='border-2 border-yellow-400 pb-16 dark:border-yellow-300'>

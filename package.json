@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "My personal website.",
   "homepage": "https://egxworld.vercel.app",
-  "author": "Ethan G.",
+  "author": "Ethan G. (https://egxworld.net)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egarrisxn/egxworld-v1"
+  },
   "license": "MIT",
   "private": true,
   "keywords": [

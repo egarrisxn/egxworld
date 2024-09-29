@@ -7,8 +7,8 @@ import {Toaster} from '@/components/ui/toaster'
 import {Analytics} from '@vercel/analytics/react'
 
 export const metadata = {
-  metadataBase: new URL('https://www.egxworld.vercel.app/'),
-  title: 'EG|World V1',
+  metadataBase: new URL('https://egxworld.vercel.app'),
+  title: 'EG|World v1',
   description: 'Full Stack Developer. Digital Product Designer.',
   referrer: 'origin-when-cross-origin',
   keywords: [
@@ -29,26 +29,26 @@ export const metadata = {
   openGraph: {
     type: 'website',
     siteName: 'egxworld.vercel.app',
-    title: 'EG|World V1',
+    title: 'EG|World v1',
     description: 'Full Stack Developer. Digital Product Designer.',
-    url: 'https://www.egxworld.vercel.app/',
+    url: 'https://egxworld.vercel.app',
     locale: 'en_US',
   },
   twitter: {
     cardType: 'summary_large_image',
-    handle: '@eg_xo_',
-    site: '@eg_xo_',
-    title: 'EG|World V1',
+    handle: '@eg__xo',
+    site: '@eg__xo',
+    title: 'EG|World v1',
     description: 'Full Stack Developer. Digital Product Designer.',
   },
 }
 
 export default function RootLayout({children}) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang='en' className='scroll-smooth antialiased' suppressHydrationWarning>
       <body
         className={cn(
-          'font-neogrote grid min-h-[100dvh] grid-rows-[auto_1fr_auto] bg-background text-foreground antialiased',
+          'grid min-h-[100dvh] grid-rows-[auto_1fr_auto] bg-background font-neogrote text-foreground',
         )}
       >
         <ThemeProvider>
