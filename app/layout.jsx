@@ -30,17 +30,41 @@ export const metadata = {
     type: 'website',
     siteName: 'egxworld.vercel.app',
     title: 'EG|World v1',
-    description: 'Full Stack Developer. Digital Product Designer.',
     url: 'https://egxworld.vercel.app',
     locale: 'en_US',
+    images: [
+      {
+        url: `https://egxworld.vercel.app/opengraph-image.png`,
+        width: 1200,
+        height: 630,
+        alt: 'Full Stack Developer. Digital Product Designer.',
+      },
+    ],
   },
   twitter: {
     cardType: 'summary_large_image',
-    handle: '@eg__xo',
+    creator: '@eg__xo',
     site: '@eg__xo',
     title: 'EG|World v1',
-    description: 'Full Stack Developer. Digital Product Designer.',
+    images: [
+      {
+        url: `https://egxworld.vercel.app/twitter-image.png`,
+        width: 1200,
+        height: 630,
+        alt: 'Full Stack Developer. Digital Product Designer.',
+      },
+    ],
   },
+  icons: {
+    shortcut: 'https://egxworld.vercel.app/favicon.ico',
+  },
+}
+
+export const viewport = {
+  themeColor: [
+    {media: '(prefers-color-scheme: light)', color: '#eaeaea'},
+    {media: '(prefers-color-scheme: dark)', color: '#0f0f10'},
+  ],
 }
 
 export default function RootLayout({children}) {
@@ -57,8 +81,8 @@ export default function RootLayout({children}) {
           <Footer />
           <Toaster />
         </ThemeProvider>
+        <Analytics />
       </body>
-      <Analytics />
     </html>
   )
 }
